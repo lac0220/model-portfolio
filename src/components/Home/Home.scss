@@ -1,0 +1,179 @@
+$first-color: #0C0032;						
+$second-color: #464866;		
+$third-color: #211A36;	
+$contact-form: #edf5e1;
+$main-font: Georgia, 'Times New Roman', Times, serif;
+$hover:#659DBD;
+$hover-menu:#FF0700;
+$text-color:white;
+
+.home {
+    background-image: url(/img/10.jpg);		
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    background-position-y:25%;
+    background-size: 90%;
+    font-weight: bold;
+    display: block;
+    padding: 200px;
+    margin: auto;
+  }
+  
+  .home__name {
+    color: $text-color;
+    font-weight: bold;
+    display: block;      
+    h3:nth-child(1) {
+        overflow: hidden;
+        white-space: nowrap;
+        letter-spacing: 5px; 
+        animation: typing 5s steps(100, end) both;
+        font-size: 60px;
+        margin: auto;
+        text-align: center;
+        text-transform: uppercase;
+        a {
+        color: $text-color;
+        font-size: 60px;
+        font-weight: bold;
+        letter-spacing: 5px; 
+      &:hover {
+        color: lightcoral;
+        filter: drop-shadow(1px 1px 10px red);
+      }
+    }
+  }
+    p:nth-child(2) {
+          overflow: hidden;
+          white-space: nowrap;
+          letter-spacing: 5px; 
+          animation: typing 5s steps(100, end) both;
+          animation-delay: 2s;
+          font-size: 40px;
+          margin: -10px auto auto;
+          text-align: center;
+            }  
+    }
+    
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  
+  @media only screen and (max-width: 1400px) {
+    .home__name {
+      li:nth-child(1) {   
+        visibility: hidden;
+        margin-top: -86px;
+    }
+    li:nth-child(2) {
+      animation: typing 3s steps(100, end) both;
+      margin: 10px auto auto;
+  }
+  li:nth-child(3) {
+        animation: typing 3s steps(100, end) both;
+        animation-delay: 2s;
+          }  
+    li:nth-child(4) {
+      animation: typing 3s steps(100, end) both;
+      animation-delay: 4s;
+      padding: 30px 0 40px;
+    }  
+      li:nth-child(5) {   
+    visibility: visible;
+    padding: 26.5px 0;
+    text-align: center;
+        a {
+          color: $text-color;
+          font-weight: bold;
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-size: 12px;
+        }
+        button {
+          padding:5px;
+          background-color: $hover-menu;
+          border-radius: 10px;
+        &:hover {
+          background-color: lightcoral;
+          filter: drop-shadow(1px 1px 10px red);
+        }
+  }
+  }
+  }
+  }
+  
+  @media only screen and (max-width: 1000px) {
+    .home__name {
+      li:nth-child(1) {   
+        padding-top:40px;
+   }
+      li:nth-child(2) {
+          animation: typing 2s steps(100, end) both;
+        a {
+          font-size: 45px;
+          letter-spacing: 1px; 
+      }
+    }
+      li:nth-child(3) {
+            animation: typing 2s steps(100, end) both;
+            animation-delay: 2s;
+            font-size: 26px;
+            letter-spacing: 1px; 
+  
+              }  
+        li:nth-child(4) {
+          animation: typing 2s steps(100, end) both;
+          animation-delay: 4s;
+          font-size: 24px;
+          letter-spacing: 1px; 
+          padding: 30px 0 31.5px;
+        } 
+        li:nth-child(5) {   
+          padding: 41px 0;
+              a {
+                font-size: 10px;
+                letter-spacing: 1px; 
+              }
+              button {
+                padding:4px;
+              } 
+    }  
+  }
+  }
+  
+  
+  @media only screen and (max-width: 600px) {
+    .home {
+      margin: -17px auto 20px;
+    }
+    .home__name {
+      li:nth-child(1) {   
+        padding-top:10px;
+   }
+      li:nth-child(2) {
+          animation: typing 2s steps(100, end) both;
+        a {
+          font-size: 40px;
+      }
+    }
+      li:nth-child(3) {
+            animation: typing 2s steps(100, end) both;
+            animation-delay: 2s;
+            font-size: 22px;
+  
+              }  
+        li:nth-child(4) {
+          animation: typing 2s steps(100, end) both;
+          animation-delay: 4s;
+          font-size: 20px;
+          padding: 30px 0 31.5px;
+        } 
+        li:nth-child(5) {   
+          padding: 30px 0;
+    }  
+  }
+  }
+  

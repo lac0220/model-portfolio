@@ -1,0 +1,45 @@
+$first-color: black;						
+$second-color: #464866;		
+$third-color: #211A36;	
+$contact-form: #edf5e1;
+$main-font: Georgia, 'Times New Roman', Times, serif;
+$hover:#659DBD;
+$hover-menu:#FF0700;
+$text-color:white;
+
+footer {
+    background-color: $first-color;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin:auto;
+    text-align: center;
+  }
+  
+  .footer__socialmedia a {
+    display: inline-block;
+    border-radius: 2px;
+    color: #ffffff;
+    margin:10px;
+    font-size: 50px;
+  }
+  
+  .footer__copyright {
+    color: white;
+  }
+  
+  /* hover social media logo */
+  .footer__socialmedia a:hover {
+    transform:scale(1.1); 
+    -webkit-transform:scale(1.1);
+    color: $hover-menu;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 600px) { 
+    .footer {
+        background-color: $first-color;	
+        margin:auto;
+    }
+  }
+  
