@@ -73,35 +73,8 @@ $text-color:white;
       animation: typing 3s steps(100, end) both;
       margin: 10px auto auto;
   }
-  li:nth-child(3) {
-        animation: typing 3s steps(100, end) both;
-        animation-delay: 2s;
-          }  
-    li:nth-child(4) {
-      animation: typing 3s steps(100, end) both;
-      animation-delay: 4s;
-      padding: 30px 0 40px;
-    }  
-      li:nth-child(5) {   
-    visibility: visible;
-    padding: 26.5px 0;
-    text-align: center;
-        a {
-          color: $text-color;
-          font-weight: bold;
-          font-family:Georgia, 'Times New Roman', Times, serif;
-          font-size: 12px;
-        }
-        button {
-          padding:5px;
-          background-color: $hover-menu;
-          border-radius: 10px;
-        &:hover {
-          background-color: lightcoral;
-          filter: drop-shadow(1px 1px 10px red);
-        }
-  }
-  }
+  
+  
   }
   }
   
@@ -116,30 +89,6 @@ $text-color:white;
           font-size: 45px;
           letter-spacing: 1px; 
       }
-    }
-      li:nth-child(3) {
-            animation: typing 2s steps(100, end) both;
-            animation-delay: 2s;
-            font-size: 26px;
-            letter-spacing: 1px; 
-  
-              }  
-        li:nth-child(4) {
-          animation: typing 2s steps(100, end) both;
-          animation-delay: 4s;
-          font-size: 24px;
-          letter-spacing: 1px; 
-          padding: 30px 0 31.5px;
-        } 
-        li:nth-child(5) {   
-          padding: 41px 0;
-              a {
-                font-size: 10px;
-                letter-spacing: 1px; 
-              }
-              button {
-                padding:4px;
-              } 
     }  
   }
   }
@@ -159,21 +108,6 @@ $text-color:white;
           font-size: 40px;
       }
     }
-      li:nth-child(3) {
-            animation: typing 2s steps(100, end) both;
-            animation-delay: 2s;
-            font-size: 22px;
-  
-              }  
-        li:nth-child(4) {
-          animation: typing 2s steps(100, end) both;
-          animation-delay: 4s;
-          font-size: 20px;
-          padding: 30px 0 31.5px;
-        } 
-        li:nth-child(5) {   
-          padding: 30px 0;
-    }  
   }
   }
   
