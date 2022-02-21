@@ -10,7 +10,7 @@ $text-color:white;
 
 .navBar {
   background-color: black;
-  height: 12%;
+  height: 10%;
   width: 100%;
   position: fixed;
   display: flex;
@@ -19,21 +19,26 @@ $text-color:white;
 }
 
 .nav__log {
-  margin: auto;
-  text-align: left;
-  padding: 10px 0;
+  margin-right: auto;
+  background-color: white;
+  padding-top: 6px;
   a {
     padding: 0;
   }
 
 }
 .nav__logo {
-  height:4.5em;
+  height:4em;
+  padding: 0 10px;
+  
 
 }
 
 .navBar li {
   display: inline-block;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .navBar button {
@@ -49,34 +54,24 @@ $text-color:white;
 
 .menuNav {
   position: fixed;
-  top: 0;
   background: black;
-  height: 12%;
+  height: 10%;
   width: 0;
   overflow: hidden;
   max-width: 100%;
   z-index: 9;
-  margin: auto;
   a {
     display: inline-block;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    margin: auto 20px;
-    &:hover,:active {
-      color:red;
-    }
+    margin: 30px;
   }
 }
+
 
 .menuNav.showMenu {
   width: 100%;
 }
-
-
-.menuNav li:first-child {
-  margin-top: 20px;
-}
-
 
 

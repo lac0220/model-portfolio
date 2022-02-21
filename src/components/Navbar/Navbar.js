@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import { NavHashLink } from 'react-router-hash-link';
-import logo from '../../img/logomodel.png';
+import logo from '../../img/logomodel.webp';
 
 
 export default function Navbar() {
@@ -20,7 +20,7 @@ export default function Navbar() {
          <div className="nav__log">
           <a href="#home"><img src={logo} className="nav__logo"alt="Logo" /></a>
           </div>   
-         <button onClick={handleToggle}>{navbarOpen ? (<MdClose style={{ color: "#fff", width: "40px", height: "40px" }} />) : (<FiMenu style={{ color: "#7b7b7b", width: "40px", height: "40px" }} />)}</button> 
+         <button onClick={handleToggle}>{navbarOpen ? (<MdClose style={{ color: "white", width: "40px", height: "40px" }} />) : (<FiMenu style={{ color: "white", width: "40px", height: "40px" }} />)}</button> 
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}> 
         <li>
         <NavHashLink
@@ -54,14 +54,9 @@ export default function Navbar() {
         Contact
         </NavHashLink>
         </li>
-        <div className="nav__socialmedia">
-  <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank"><i className="fab fa-instagram" /></a>    {/* instagram */}
-  <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank"><i className="fab fa-facebook" /></a>    {/* facebook */}
-  <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank"><i className="fab fa-linkedin" /></a>    {/* linkedin */}
-</div>    
         </ul>
-        
   </nav>
+  
 
   );
 }

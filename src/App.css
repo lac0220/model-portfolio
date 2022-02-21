@@ -1,21 +1,21 @@
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
 html, body {
   line-height: 1.5;
   font-size: 20px;
-  height: 100%;
-}
-
-@media screen and (max-width: 600px) {
-  html, body {
-    margin-left: 0;
-    padding: 0;
-  }
+  font-family:'Times New Roman', Times, serif;
+  height: 100vh;
+  margin:auto;
+  background: white;
+  scroll-padding-top: 10%; /* Equals to fixed navbar height for mobile usage*/
+  scroll-behavior: smooth;
 }
 
 section h1 {
@@ -28,22 +28,23 @@ section p {
   text-align: justify;
 }
 
-.container__horizontal {
-  border-radius: 100%;
-  width: 30%;
-  margin: auto;  
-}
-
-@media screen and (max-width: 600px) {
-  .container__horizontal {
-    width: 70%;
-  }
-}
-
 li {
-  list-style: none;
+    list-style: none;
 }
-
+  
 a {
   text-decoration: none;
 }
+
+@media screen and (max-width: 700px) {
+
+section h1 {
+  font-size: 30px;
+  padding: 0px;	
+}
+
+section p {
+  font-size: 16px;
+}
+}
+  

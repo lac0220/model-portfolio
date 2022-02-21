@@ -8,7 +8,7 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .home {
-    background-image: url(/img/10.jpg);		
+    background-image: url(/img/10.webp);		
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center;
@@ -76,6 +76,27 @@ $text-color:white;
   
   
   }
+  }
+
+  .home__socialmedia {
+    background: black;
+    border-radius: 20px;
+    z-index: 9;
+    margin: auto;
+    position: fixed;
+    top:40%;
+    left:96%;
+    a {
+      display: block;
+      color: white;
+      font-size: 30px;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin: 15px;
+      &:hover,:active {
+        color:red;
+      }
+    }
   }
   
   @media only screen and (max-width: 1000px) {
