@@ -4,6 +4,8 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
+import Blog from './components/Blog/Blog';
+
 
 
 export default function App() {

@@ -8,36 +8,32 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .home {
-    background-image: url(/img/10.webp);		
+    background-image: url(/img/13.webp);		
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center;
-    background-position-y:25%;
+    background-position-y:1%;
     background-size: 90%;
-    font-weight: bold;
-    display: block;
-    padding: 200px;
-    margin: auto;
+    padding: 300px 0;
+    margin:auto 95px;
   }
   
   .home__name {
-    color: $text-color;
-    font-weight: bold;
-    display: block;      
-    h3:nth-child(1) {
-        overflow: hidden;
-        white-space: nowrap;
-        letter-spacing: 5px; 
-        animation: typing 5s steps(100, end) both;
+    color: white;
+    width: 49%; 
+    background-color: black;
+    border-top-right-radius: 20px;
+    position: relative;
+    top: 300px;
+    p:nth-child(1) {
+        letter-spacing: 2px; 
         font-size: 60px;
-        margin: auto;
         text-align: center;
-        text-transform: uppercase;
         a {
         color: $text-color;
         font-size: 60px;
-        font-weight: bold;
         letter-spacing: 5px; 
+        color: #edf5e1;
       &:hover {
         color: lightcoral;
         filter: drop-shadow(1px 1px 10px red);
@@ -45,15 +41,10 @@ $text-color:white;
     }
   }
     p:nth-child(2) {
-          overflow: hidden;
-          white-space: nowrap;
-          letter-spacing: 5px; 
-          animation: typing 5s steps(100, end) both;
-          animation-delay: 2s;
+          letter-spacing: 2px; 
           font-size: 40px;
-          margin: -10px auto auto;
           text-align: center;
-            }  
+        }  
     }
     
   
@@ -62,19 +53,24 @@ $text-color:white;
     to { width: 100% }
   }
   
+  .sliderimg{
+    margin-top:30px;  
+    border-radius: 20px;
+  }
+
+  .slider {
+    margin: auto;
+    text-align: center;
+  }
   
   @media only screen and (max-width: 1400px) {
     .home__name {
-      li:nth-child(1) {   
-        visibility: hidden;
-        margin-top: -86px;
-    }
-    li:nth-child(2) {
-      animation: typing 3s steps(100, end) both;
+      p:nth-child(1) {   
+    p:nth-child(2) {
       margin: 10px auto auto;
   }
   
-  
+}
   }
   }
 
@@ -98,7 +94,10 @@ $text-color:white;
       }
     }
   }
+ 
   
+
+
   @media only screen and (max-width: 1000px) {
     .home__name {
       li:nth-child(1) {   

@@ -7,23 +7,36 @@ $hover:#659DBD;
 $hover-menu:#FF0700;
 $text-color:white;
 
-.aboutme {
-    display: flex;
-    flex-direction: row;  
-    padding: 30px 0 40px;
-  }
+
   
-  .aboutme p {
-    margin: 0 100px;
+  .about__box {
+    margin: auto;
+  }
+
+  .about__imgbox {
+    // background-image: url(/img/10.webp);		
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: contain;
+    // background-position-x: 8%; 
+    background-color: #0C0032;
+    display: inline-block;
+    padding:300px;
+  }
+
+  .aboutme__text {
+    max-width: 500px;
+    height: 500px;
+    display: inline-block;
+    margin:auto 80px;
+    text-align: right;
+
   }
   
   
   
   @media only screen and (max-width: 1100px) {
-    .aboutme {
-      display: flex;
-      flex-direction: column-reverse;
-    }
+   
 
     .aboutme__text p { 
         margin: 0 20px;

@@ -12,7 +12,6 @@ html, body {
   font-size: 20px;
   font-family:'Times New Roman', Times, serif;
   height: 100vh;
-  margin:auto;
   background: white;
   scroll-padding-top: 10%; /* Equals to fixed navbar height for mobile usage*/
   scroll-behavior: smooth;
