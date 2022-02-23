@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import { NavHashLink } from 'react-router-hash-link';
+import { NavLink } from 'react-router-dom';
 import logo from '../../img/logomodel.webp';
 
 
@@ -34,6 +35,28 @@ export default function Navbar() {
         </li>
 
         <li>
+        <NavLink
+        to="/gallery"
+        activeClassName="active-link"
+        onClick={() => closeMenu()}
+        exact
+        >
+        Gallery
+        </NavLink>
+        </li>
+
+        <li>
+        <NavLink
+        to="/blog"
+        activeClassName="active-link"
+        onClick={() => closeMenu()}
+        exact
+        >
+        Blog
+        </NavLink>
+        </li>
+
+        <li>
         <NavHashLink
         to="/#aboutme"
         activeClassName="active-link"
@@ -56,14 +79,11 @@ export default function Navbar() {
         </li>
         </ul>
   </nav>
-  
-
   );
 }
 
 
-
-
+    
 
 
 

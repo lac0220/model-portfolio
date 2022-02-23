@@ -18,15 +18,14 @@ $text-color:white;
   text-align: center;
   z-index: 10;
 
+
 }
 
 .nav__log {
   margin-right: auto;
   background-color: white;
   padding-top: 6px;
-  a {
-    padding: 0;
-  }
+  
 
 }
 .nav__logo {
@@ -38,9 +37,6 @@ $text-color:white;
 
 .navBar li {
   display: inline-block;
-  margin: auto;
-  justify-content: center;
-  align-items: center;
 }
 
 .navBar button {
@@ -48,16 +44,15 @@ $text-color:white;
   cursor: pointer;
   background: transparent;
   border: none;
-  margin:auto;
-  &:hover,:active {
-    color:red;
-  }
+  margin-right: auto;
+  position: relative;
+  right: 50px;
 }
 
 .menuNav {
   position: fixed;
   background: black;
-  height: 10%;
+  height: 15%;
   width: 0;
   overflow: hidden;
   max-width: 100%;
@@ -67,7 +62,7 @@ $text-color:white;
     color: white;
     text-transform: uppercase;
     font-weight: bold;
-    margin: 30px;
+    margin: 80px 30px 10px;
   }
 }
 
