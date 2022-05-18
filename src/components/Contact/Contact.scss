@@ -8,66 +8,77 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
   padding: 30px 0 40px;
-  &__form {
-      width: 37%;
+  width: 90%;
+  margin: auto;
+    &__box {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    
+    
+    form {
+        width: 35%;
+        font-size: 22px;
+        display: block;
+        margin-right: 80px;
+      
+    input[type=text], textarea {
+      display: flex;
+      flex-direction: column;
+      background-color:black;
+      color: white;
+      width: 100%;
+      padding: 12px;
+      border-radius: 15px;
+      margin: 6px 0 16px;
       font-size: 22px;
-      display: block;
-  }
-}
-  
-.contact__box {
-  background-color: #0C0032;
-  padding: 310px;
-}
-  
-input[type=text], textarea {
-  display: flex;
-  flex-direction: column;
-  background-color:black;
-  color: white;
-  width: 100%;
-  padding: 12px;
-  border: 2px solid $hover ;
-  border-radius: 15px;
-  margin: 6px 0 16px;
-  font-size: 22px;
-  font-family: $main-font;
-  resize: vertical;
-  outline: none;
-}
+      font-family: $main-font;
+      resize: vertical;
+      outline: none;
+    }
 
-::placeholder {
-  color: white;
-}
-  
-input[type=text]:required:focus:invalid {
-  border: 2px solid white;
-}
-  
-input[type=submit] {
-  background-color: black;
-  color: $text-color;
-  padding: 10px;
-  border-radius: 15px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 20px;
-  font-family: $main-font;
-  width: 30%;
-  position: relative;
-  left: 35%;
-  &:hover {
-      background-color: lightskyblue;
-      &:active {
-          color:green;
+    ::placeholder {
+      color: white;
+    }
+      
+    input[type=text]:required:focus:invalid {
+      border: 2px solid red;
+    }
+      
+    input[type=submit] {
+      background-color: black;
+      color: $text-color;
+      padding: 10px;
+      border-radius: 15px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 20px;
+      font-family: $main-font;
+      width: 30%;
+      border: none;
+      
+      
+      &:hover {
+          background-color:#FF0700;
+          
       }
+    }
+    .contact__submit {
+      text-align: center;
+    }
   }
-}
+  img {
+    max-height: 450px;
+    height: auto;
+    margin-top: 5px;
+    border-radius: 20px;
+  }
+
+  }
   
+}
   
   @media only screen and (max-width: 1100px) {
     .contact {

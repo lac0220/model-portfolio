@@ -1,4 +1,4 @@
-$first-color: #0C0032;						
+$first-color: #0C0032;					
 $second-color: #464866;		
 $third-color: #211A36;	
 $contact-form: #edf5e1;
@@ -8,64 +8,81 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .home {
+  &__name {
     background-image: url(/img/13.webp);		
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position:center;
-    background-position-y:1%;
-    background-size: 90%;
+    background-position-y: 1%;
+    background-size: 100%;
     padding: 300px 0;
-    margin:auto 95px;
-  }
-  
-  .home__name {
     color: white;
-    width: 49%; 
-    background-color: black;
-    border-top-right-radius: 20px;
-    position: relative;
-    top: 300px;
-    p:nth-child(1) {
-        letter-spacing: 2px; 
-        font-size: 60px;
-        text-align: center;
-        margin-bottom: -20px;
-        a {
-        color: $text-color;
-        font-size: 60px;
-        letter-spacing: 5px; 
-        color: #edf5e1;
-      &:hover {
-        color: lightcoral;
-        filter: drop-shadow(1px 1px 10px red);
-      }
-    }
-  }
-    p:nth-child(2) {
-          letter-spacing: 2px; 
-          font-size: 40px;
-          text-align: center;
-          padding-bottom: 10px;
-
-        }  
+    margin: auto 95px;
+    li {
+      background-color: black;
+      position: relative;
+      width: 50%;
+      top: 300px;
+      font-weight: bold;
+      text-align: center;
+      padding-left: 20px;
+      letter-spacing: 4px; 
     }
     
+    li:nth-child(1) {
+        font-size: 50px;
+        border-top-right-radius: 20px;
+        margin-bottom: -5px;
+        
+    }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
+    li:nth-child(2) {
+          font-size: 30px;
+          padding-bottom: 10px;
+        }  
+    }
+
+    h1 {
+      padding: 30px 0;
+    }
   
-  .sliderimg{
-    margin-top:30px;  
+    &__slider {
+      margin: auto;
+      text-align: center;
+      background-color: black;
+    
+  
+  img{
     border-radius: 20px;
+    border: white solid 5px;
+
   }
 
-  .slider {
-    margin: auto;
-    text-align: center;
+  .alice-carousel__stage-item.__target, .alice-carousel__stage-item{
+    margin-top: 20px;
   }
-  
+
+  .alice-carousel__dots {
+    margin: 0;
+    padding: 10px;
+  }
+
+    .alice-carousel__dots-item:not(.custom) {
+      height: 15px;
+      width: 15px;
+      background-color: gray;
+      &:hover {
+        background-color: white;
+      }
+    }
+    .alice-carousel__dots-item:not(.custom).__active {
+      background-color: white;
+
+    }
+
+
+  }
+}
   @media only screen and (max-width: 1400px) {
     .home__name {
       p:nth-child(1) {   
@@ -77,26 +94,7 @@ $text-color:white;
   }
   }
 
-  .home__socialmedia {
-    background: black;
-    border-radius: 20px;
-    z-index: 9;
-    margin: auto;
-    position: fixed;
-    top:40%;
-    left:96%;
-    a {
-      display: block;
-      color: white;
-      font-size: 30px;
-      text-transform: uppercase;
-      font-weight: bold;
-      margin: 15px;
-      &:hover,:active {
-        color:red;
-      }
-    }
-  }
+  
  
   
 

@@ -6,8 +6,8 @@ import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Blog from './components/Blog/Blog';
 import Gallery from './components/Gallery/Gallery';
-import './App.css';
-import { Router, Routes, Route } from "react-router-dom";
+import './App.scss';
+import { Routes, Route } from "react-router-dom";
 
 
 export default function App() {

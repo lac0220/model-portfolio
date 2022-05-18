@@ -7,42 +7,83 @@ $hover:#659DBD;
 $hover-menu:#FF0700;
 $text-color:white;
 
-
-  
-  .about__box {
-    margin: auto;
-  }
-
-  .about__imgbox {
-    // background-image: url(/img/10.webp);		
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-size: contain;
-    // background-position-x: 8%; 
-    background-color: #0C0032;
-    display: inline-block;
-    padding:300px;
-  }
-
-  .aboutme__text {
-    max-width: 500px;
-    height: 500px;
-    display: inline-block;
-    margin:auto 80px;
-    text-align: right;
-
-  }
-  
-  
-  
-  @media only screen and (max-width: 1100px) {
-   
-
-    .aboutme__text p { 
-        margin: 0 20px;
-        padding-bottom: 20px;
-        line-height: 1.2;
-        word-break: break-all;
+.about {
+  padding: 30px 0 0px;
+  width: 90%;
+  margin: auto;
+  &__box {
+    display: flex;
+    flex-direction: row;
+    button {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 3.5rem;
+      font-family: inherit;
+      color: white;
+      background-color: black;
+      &:hover {
+        color: lightgray;
+      }
+    
+      .about__box__img {
+      background-color: black;
+      display: grid;
+      img {
+        max-height: 400px;
+        width: auto;
+        object-fit: cover;
+      }
+      .img1 {
+        grid-column: 1;
+        grid-row: 1;   
+        padding-top: 10px; 
+        width: 350px;  
+      }
+      .img2 {
+        grid-column: 2;
+        grid-row: 1; 
+        padding-top: 10px; 
+        width: 340px; 
+      }
+      .img3 {
+        grid-column: 1;
+        grid-row: 2;      
+      }
+      .img4 {
+        grid-column: 2;
+        grid-row: 2;  
+        width: 340px;  
+    
+      }
     }
+    }
+
+    &__text {
+      margin-left: 80px;
+      text-align: center;
+      p{
+        margin-bottom: 30px;
+      }
+    span {
+      color: black;
+      font-weight: bold;
+      font-size: 2.5rem;
+      &:hover {
+        color: lightgray;
+      }
+      i {
+        padding-left: 10px;
+      }
+    }
+    }
+
   }
+}
+  
+@media only screen and (max-width: 1100px) {
+   
+  p {     
+    margin: 0 auto auto 80px;
+    }
+}
   
