@@ -1,4 +1,5 @@
 import React from 'react';
+import { Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import About from './components/About/About';
@@ -7,8 +8,6 @@ import Footer from './components/Footer/Footer';
 import Blog from './components/Blog/Blog';
 import Gallery from './components/Gallery/Gallery';
 import './App.scss';
-import { Routes, Route } from "react-router-dom";
-
 
 export default function App() {
   return (
@@ -22,7 +21,7 @@ export default function App() {
       <About />
       <Contact />
       <Footer />
-      </main>  )
-      ;
+    </main>  
+  );
 }
 

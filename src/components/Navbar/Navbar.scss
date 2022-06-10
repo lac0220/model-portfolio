@@ -1,71 +1,62 @@
 $first-color: black;						
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
-$hover-menu:#FF0700;
 $text-color:white;
 
 nav {
-  background-color: $first-color;
-  width: 100vw;
-  position: fixed;
-  text-align: center;
-  z-index: 1;
   display: flex;
-
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  text-align: center;
+  background-color: $first-color;
   .nav__logo {
-    background-color: white;
     padding-top: 6px;
-  img {
-    height: 4em;
-    padding: 0 8px 0 7px;
-  } 
+    background-color: $text-color;
+    img {
+      height: 4em;
+      padding: 0 8px 0 7px;
+    } 
   }
+
   button {
+    position: relative;
+    right: 56px;
+    margin: auto;
     z-index: 2;
     cursor: pointer;
-    background: transparent;
     border: none;
-    color: white;
     font-size: 3rem;
-    margin: auto;
-    position: relative;
-    right: 47px;
-    
+    background: transparent;
+    color: $text-color;
   }
+
   ul {
     position: fixed;
-    background: black;
     height: 15%;
     width: 0;
-    overflow: hidden;
     z-index: 1;
+    overflow: hidden;
+    background: $first-color;
   }
+
+  ul.showMenu {
+    width: 100%;
+  }
+
   li {
     display: inline-block;
     a {
-      width: 90%;
       display: inline-block;
-      color: white;
+      margin: 80px 30px;
+      width: 90%;
       text-transform: uppercase;
       font-weight: bold;
-      margin: 80px 30px;
+      color: $text-color;
       &:hover {
           transform:scale(1.2); 
           -webkit-transform:scale(1.2);
           color: lightgray;
       }
-      }
     }
-  
- 
-
-
-
-
-
-
-ul.showMenu {
-  width: 100%;
-}
+  }
 }
 

@@ -1,24 +1,23 @@
 $first-color: black;						
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
-$hover-menu:#FF0700;
 $text-color:white;
 
 footer {
-    background-color: $first-color;
-    padding: 30px;
-    text-align: center;
-    color: white;
+  text-align: center;
+  background-color: $first-color;
+  color: $text-color;
+  p:nth-child(1) {
+    padding: 10px 0;
   }
+
+  p:nth-child(2) {
+    padding-bottom: 10px;
+    font-size: 1.125rem;
+  }
+}
   
-  /* Media Queries */
-  @media screen and (max-width: 600px) { 
-    .footer {
-        background-color: $first-color;	
-        margin:auto;
-    }
+@media screen and (max-width: 600px) { 
+  .footer {
+    text-align: center;
   }
+}
   

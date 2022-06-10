@@ -50,22 +50,19 @@ $text-color:white;
       margin: auto;
       text-align: center;
       background-color: black;
-    
-  
-  img{
-    border-radius: 20px;
-    border: white solid 5px;
+      img{
+        border-radius: 20px;
+        border: white solid 5px;
+      }
 
-  }
+    .alice-carousel__stage-item.__target, .alice-carousel__stage-item{
+      margin-top: 20px;
+    }
 
-  .alice-carousel__stage-item.__target, .alice-carousel__stage-item{
-    margin-top: 20px;
-  }
-
-  .alice-carousel__dots {
-    margin: 0;
-    padding: 10px;
-  }
+    .alice-carousel__dots {
+      margin: 0;
+      padding: 10px;
+    }
 
     .alice-carousel__dots-item:not(.custom) {
       height: 15px;
@@ -75,31 +72,24 @@ $text-color:white;
         background-color: white;
       }
     }
+
     .alice-carousel__dots-item:not(.custom).__active {
       background-color: white;
-
     }
-
-
   }
 }
-  @media only screen and (max-width: 1400px) {
+
+@media only screen and (max-width: 1400px) {
     .home__name {
       p:nth-child(1) {   
-    p:nth-child(2) {
+      p:nth-child(2) {
       margin: 10px auto auto;
+    }  
   }
-  
 }
-  }
-  }
+}
 
-  
- 
-  
-
-
-  @media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1000px) {
     .home__name {
       li:nth-child(1) {   
         padding-top:40px;
@@ -112,10 +102,9 @@ $text-color:white;
       }
     }  
   }
-  }
+}
   
-  
-  @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
     .home {
       margin: -17px auto 20px;
     }
@@ -130,5 +119,5 @@ $text-color:white;
       }
     }
   }
-  }
+}
   

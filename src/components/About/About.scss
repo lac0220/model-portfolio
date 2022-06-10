@@ -8,82 +8,150 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .about {
+  margin: auto 95px;
   padding: 30px 0 0px;
-  width: 90%;
-  margin: auto;
   &__box {
-    display: flex;
-    flex-direction: row;
-    button {
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 3.5rem;
-      font-family: inherit;
-      color: white;
-      background-color: black;
-      &:hover {
-        color: lightgray;
+      .about__box__button1 {
+        position: relative;
+        top: 10px;
+        margin-right: 20px;
+        float: left;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 2.8rem;
+        font-family: inherit;
+        color: white;
+        background-color: black;
+        &:hover {
+          color: lightgray;
+        }
+        .about__box__img1 {
+        display: grid;
+        padding: 10px;
+        img {
+          max-height: 290px;
+          width: 230px;
+          object-fit: cover;
+          padding: 10px; 
+          border: white solid 5px;
+        }
+        .img1 {
+          grid-column: 1;
+          grid-row: 1; 
+        }
+        .img2 {
+          grid-column: 2;
+          grid-row: 1; 
+        }
+        .art1 {
+          grid-column: 3;
+          grid-row: 1; 
+        }
+        .art2 {
+          grid-column: 4;
+          grid-row: 1; 
+        }
       }
-    
-      .about__box__img {
-      background-color: black;
-      display: grid;
-      img {
-        max-height: 400px;
-        width: auto;
-        object-fit: cover;
-      }
-      .img1 {
-        grid-column: 1;
-        grid-row: 1;   
-        padding-top: 10px; 
-        width: 350px;  
-      }
-      .img2 {
-        grid-column: 2;
-        grid-row: 1; 
-        padding-top: 10px; 
-        width: 340px; 
-      }
-      .img3 {
-        grid-column: 1;
-        grid-row: 2;      
-      }
-      .img4 {
-        grid-column: 2;
-        grid-row: 2;  
-        width: 340px;  
-    
-      }
-    }
-    }
-
-    &__text {
-      margin-left: 80px;
-      text-align: center;
-      p{
-        margin-bottom: 30px;
-      }
-    span {
-      color: black;
-      font-weight: bold;
-      font-size: 2.5rem;
-      &:hover {
-        color: lightgray;
-      }
-      i {
-        padding-left: 10px;
-      }
-    }
-    }
-
+    } 
   }
 }
   
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1600px) {
    
-  p {     
-    margin: 0 auto auto 80px;
-    }
+  .about {
+    &__box {
+      .about__box__button1 {
+        .about__box__img1 {
+        background-color: black;
+        display: grid;
+        img {
+          width: auto;
+          object-fit: cover;
+        }
+      } 
+      } 
+    }  
+        &__box1{
+    .about__box__button2 {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 2.5rem;
+      font-family: inherit;
+      color: white;
+      background-color: black;
+      .about__box__img2 {
+        background-color: black;
+        display: grid;
+        img {
+          width: auto;
+          object-fit: cover;
+        }
+        .img1 {
+          grid-column: 1;
+          grid-row: 1;   
+          padding-top: 10px; 
+        }
+        .img2 {
+          grid-column: 2;
+          grid-row: 1; 
+          padding-top: 10px; 
+        }
+        .art1 {
+          grid-column: 3;
+          grid-row: 1; 
+        }
+        .art2 {
+          grid-column: 4;
+          grid-row: 1;  
+        }
+      }      
 }
-  
+}
+}
+}
+
+@media only screen and (max-width: 1300px) {
+   
+  .about {
+    &__box {
+    .about__box__button2 {
+      margin: auto auto auto;
+      cursor: pointer;
+      position: relative;
+      bottom: 0px;
+      font-weight: bold;
+      font-size: 2.5rem;
+      font-family: inherit;
+      color: white;
+      background-color: black;
+      .about__box__img2 {
+        background-color: black;
+        display: grid;
+        img {
+          max-height: 250px;
+          width: auto;
+          object-fit: cover;
+        }
+        .img1 {
+          grid-column: 1;
+          grid-row: 1;   
+          padding-top: 10px; 
+        }
+        .img2 {
+          grid-column: 2;
+          grid-row: 1; 
+          padding-top: 10px; 
+        }
+        .art1 {
+          grid-column: 1;
+          grid-row: 2; 
+        }
+        .art2 {
+          grid-column: 2;
+          grid-row: 2;  
+        }
+      }
+    }     
+  }
+}
+}

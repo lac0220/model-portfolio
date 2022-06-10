@@ -8,102 +8,140 @@ $hover-menu:#FF0700;
 $text-color:white;
 
 .contact {
-  
-  padding: 30px 0 40px;
-  width: 90%;
-  margin: auto;
-    &__box {
+    padding: 30px 0 40px;
+    &-box {
       display: flex;
       flex-direction: row;
       justify-content: center;
-    
-    
-    form {
-        width: 35%;
+      form {
+        width: 30%;
         font-size: 22px;
         display: block;
         margin-right: 80px;
       
-    input[type=text], textarea {
-      display: flex;
-      flex-direction: column;
-      background-color:black;
-      color: white;
-      width: 100%;
-      padding: 12px;
-      border-radius: 15px;
-      margin: 6px 0 16px;
-      font-size: 22px;
-      font-family: $main-font;
-      resize: vertical;
-      outline: none;
-    }
+        input[type=text], textarea {
+          display: flex;
+          flex-direction: column;
+          background-color:black;
+          color: white;
+          width: 100%;
+          padding: 12px;
+          border-radius: 15px;
+          margin: 6px 0 16px;
+          font-size: 22px;
+          font-family: $main-font;
+          resize: vertical;
+          outline: none;
+        }
 
-    ::placeholder {
-      color: white;
-    }
-      
-    input[type=text]:required:focus:invalid {
-      border: 2px solid red;
-    }
-      
-    input[type=submit] {
-      background-color: black;
-      color: $text-color;
-      padding: 10px;
-      border-radius: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 20px;
-      font-family: $main-font;
-      width: 30%;
-      border: none;
-      
-      
-      &:hover {
-          background-color:#FF0700;
+        ::placeholder {
+          color: white;
+        }
           
+        input[type=text]:required:focus:invalid {
+          border: 2px solid red;
+        }
+          
+        input[type=submit] {
+          background-color: black;
+          color: $text-color;
+          padding: 10px;
+          border-radius: 15px;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 20px;
+          font-family: $main-font;
+          width: 30%;
+          border: none;
+          &:hover {
+              background-color:lightgray;
+              color: black;  
+          }
+        }
+        
+        .contact-submit {
+          text-align: center;
+        }
       }
+        img {
+          max-height: 465px;
+          margin-top: 5px;
+          border-radius: 10px;
+        }
+     }
     }
-    .contact__submit {
-      text-align: center;
-    }
-  }
-  img {
-    max-height: 450px;
-    height: auto;
-    margin-top: 5px;
-    border-radius: 20px;
-  }
-
-  }
-  
+      .contact-blog {
+        text-align: center;
+        h2 {
+          display: inline-block;
+        color: black;
+        margin-top: 30px;
+        &:hover {
+          color: lightgray;
+        }
+        i {
+          padding-left: 10px;
+        }
+      }
+   
 }
-  
-  @media only screen and (max-width: 1100px) {
+
+@media only screen and (max-width: 1300px) {
+  .contact {
+  form{
+    width: 40%;
+  }
+}
+}
+
+@media only screen and (max-width: 1000px) {
     .contact {
-      flex-direction: column;
-    }
-  
-    .contact__form {
-      width: 90%;
+      &-box {
+        flex-direction: column;
+
+    form {
+      width: 70%;
       margin: auto;
       padding-bottom: 20px;
     }
-    
-    input[type=submit] {
-      background-color: $hover-menu;
-      color: $text-color;
-      padding: 10px 10px;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      font-weight: bold;
-      font-size: 18px;
-      font-family: $main-font;
-      width: 30%;
-      position: relative;
-      left: 35%;
-      text-align: center;
-    }
   }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 20px;
+  }
+}
+  .contact-blog {
+  h2 {
+    margin-top: 10px;
+    }
+}
+}
+
+@media only screen and (max-width: 500px) {
+  .contact {
+    &-box {
+      flex-direction: column;
+  form{
+    width: 90%;
+    margin: auto;
+    padding-bottom: 20px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 20px;
+}
+}
+
+.contact-blog {
+h2 {
+  margin-top: 10px;
+  }
+}
+}

@@ -1,0 +1,68 @@
+.message {
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    &-smile {
+        position: absolute;
+        right: 0;
+        bottom: 220px;
+        max-width: 100px;
+    }
+
+    h1, h2 {
+        padding: 25px 0;
+    }
+
+    a {
+        color: black;
+        &:hover {
+            color: gray;
+        }
+    }
+}
+  
+@media only screen and (max-width: 1060px) {
+    
+    .message {
+        width: 90%;
+        &-smile {
+            position: relative;
+            right: 0;
+            top: 5px;
+        }
+
+        h1, h2 {
+            padding: 15px 0;
+        }
+    }
+}
+  
+@media only screen and (max-width: 700px) {
+
+    .message {
+        &-smile {
+            max-width: 80px;
+        }
+
+        h1 {
+            padding: 20px 0;
+            font-size: 1.563rem;
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1.25rem;
+        }
+        
+        a:hover {
+                color: lightblue;
+            }
+
+        a:active {
+            color: blue;
+        }
+    }
+}

@@ -1,13 +1,11 @@
-import classes from './Navbar.scss';
+import './Navbar.scss';
 import React, { useState } from "react"
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
 import { NavHashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import { Link } from 'react-router-dom';
-
 import logo from '../../img/logomodel.webp';
-
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = useState(false)
@@ -86,7 +84,7 @@ export default function Navbar() {
             </ul>
           </nav>
         );
-      }
+}
 
 
     
