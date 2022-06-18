@@ -12,8 +12,8 @@
 To run this project locally:
 
 ```
-$ cd ../lorem
-$ npm install
+$ npx create-react-app my-app
+$ cd my-app
 $ npm start
 ```
 Used [React](https://reactjs.org/) for implementation
