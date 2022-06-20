@@ -1,3 +1,5 @@
+$first-color: black;						
+
 .message {
     margin-right: -50%;
     position: absolute;
@@ -17,7 +19,7 @@
     }
 
     a {
-        color: black;
+        color: $first-color;
         &:hover {
             color: gray;
         }
@@ -58,8 +60,8 @@
         }
         
         a:hover {
-                color: lightblue;
-            }
+            color: lightblue;
+        }
 
         a:active {
             color: blue;

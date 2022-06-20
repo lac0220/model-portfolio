@@ -1,62 +1,51 @@
-$first-color: #0C0032;					
-$second-color: #464866;		
-$third-color: #211A36;	
-$contact-form: #edf5e1;
-$main-font: Georgia, 'Times New Roman', Times, serif;
-$hover:#659DBD;
-$hover-menu:#FF0700;
+$first-color: black;					
 $text-color:white;
 
 .home {
+  margin: auto 95px;
   &__name {
     background-image: url(/img/13.webp);		
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position:center;
-    background-position-y: 1%;
+    background-position: center;
+    background-position-y: -10%;
     background-size: 100%;
     padding: 300px 0;
-    color: white;
-    margin: auto 95px;
+    color: $text-color;
     li {
-      background-color: black;
       position: relative;
-      width: 50%;
       top: 300px;
-      font-weight: bold;
-      text-align: center;
-      padding-left: 20px;
+      padding: 0 20px;
+      width: 50%;
       letter-spacing: 4px; 
+      text-align: center;
+      font-weight: bold;
+      background-color: $first-color;
     }
     
     li:nth-child(1) {
-        font-size: 50px;
-        border-top-right-radius: 20px;
-        margin-bottom: -5px;
-        
+      margin-bottom: -5px; 
+      border-top-right-radius: 20px;
+      font-size: 3.125rem; 
     }
   
     li:nth-child(2) {
-          font-size: 30px;
-          padding-bottom: 10px;
-        }  
-    }
+      padding-bottom: 10px;
+      font-size: 1.875rem;
+    }  
+  }
 
-    h1 {
-      padding: 30px 0;
-    }
-  
-    &__slider {
-      margin: auto;
-      text-align: center;
-      background-color: black;
-      img{
-        border-radius: 20px;
-        border: white solid 5px;
-      }
+  h1 {
+    padding: 30px 0;
+  }
 
-    .alice-carousel__stage-item.__target, .alice-carousel__stage-item{
+  &__slider {
+    text-align: center;
+    background-color: $first-color;
+    img{
       margin-top: 20px;
+      border: $text-color solid 5px;
+      border-radius: 20px;
     }
 
     .alice-carousel__dots {
@@ -69,55 +58,46 @@ $text-color:white;
       width: 15px;
       background-color: gray;
       &:hover {
-        background-color: white;
+        background-color: $text-color;
       }
     }
 
     .alice-carousel__dots-item:not(.custom).__active {
-      background-color: white;
+      background-color: $text-color;
     }
   }
 }
 
-@media only screen and (max-width: 1400px) {
-    .home__name {
-      p:nth-child(1) {   
-      p:nth-child(2) {
-      margin: 10px auto auto;
-    }  
+@media only screen and (max-width: 1500px) {
+
+  .home {
+    &__name {
+      padding: 250px 0;
+      background-size: cover;
+      li {
+        top: 250px; 
+        width: 61%;
+      }
+
+      li:nth-child(1) {
+        font-size: 2.5rem;
+      }
+    
+      li:nth-child(2) {
+        font-size: 1.875rem; 
+      }     
+    }
   }
-}
 }
 
-@media only screen and (max-width: 1000px) {
-    .home__name {
-      li:nth-child(1) {   
-        padding-top:40px;
-   }
-      li:nth-child(2) {
-          animation: typing 2s steps(100, end) both;
-        a {
-          font-size: 45px;
-          letter-spacing: 1px; 
-      }
-    }  
-  }
-}
-  
-@media only screen and (max-width: 600px) {
-    .home {
-      margin: -17px auto 20px;
-    }
-    .home__name {
-      li:nth-child(1) {   
-        padding-top:10px;
-   }
-      li:nth-child(2) {
-          animation: typing 2s steps(100, end) both;
-        a {
-          font-size: 40px;
-      }
+@media only screen and (max-width: 1300px) {
+
+  .home {
+    &__name {
+      background-position-x: 90%;
     }
   }
 }
+
+
   

@@ -27,7 +27,7 @@ Used third-party libraries:
 - react-modal-image: for modal images with zoom
 ## Version
 
-1.0 - in processing
+1.0 - in processing, not responsive yet under 1000px
 
 ## Author
 

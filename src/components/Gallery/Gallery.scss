@@ -1,30 +1,33 @@
+$first-color: black;						
+$text-color:white;
+
 .gallery {
-    padding: 130px 0 40px;
     margin: auto 95px;
+    padding: 130px 0 40px;
         &-images {
         display: flex;
         flex-direction: row;
         column-gap: 60px;
-        background-color: black;
-        color: white;
         margin-top: 10px;
+        background-color: $first-color;
+        color: $text-color;
         &__box {
-            text-align: center;
             column-gap: 30px;
             margin: 10px 20px;
+            text-align: center;
             h2 {
                 padding-bottom: 10px;
                 font-size: 2.5rem;
             }
                 
-            &__img1 {
+            &__image {
                 display: grid;
-                column-gap: 10px;
                 grid-template-columns: repeat(3, 1fr);  
-                object-fit: cover;
+                column-gap: 10px;
                 row-gap: 20px;
+                object-fit: cover;
                 img {
-                    border: white solid 5px;
+                    border: $text-color solid 5px;
     
                 }
             }
@@ -33,7 +36,7 @@
 
     &-vertical-line {
         margin: 20px 10px;
-        border: 2px groove darkgray;	;
+        border: 2px double darkgray;
         border-radius: 100%;
     }
 }

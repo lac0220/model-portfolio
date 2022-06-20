@@ -14,6 +14,7 @@ import img12 from '../../img/12.webp';
 import img13 from '../../img/13.webp';
 import art1 from '../../img/art1.jpg';
 import art2 from '../../img/art2.jpg';
+import {SocialMediaNavbar} from '../SocialMediaNavbar';
 
 export default function Gallery () {  
     return (
@@ -22,7 +23,7 @@ export default function Gallery () {
         <div className="gallery-images">
           <div className="gallery-images__box">
             <h2>Model</h2>
-            <div className="gallery-images__box__img1">
+            <div className="gallery-images__box__image">
               <ModalImage
                 small={img1}
                 large={img1}
@@ -90,7 +91,7 @@ export default function Gallery () {
 
           <div className="gallery-images__box">
             <h2>Art</h2>
-            <div className="gallery-images__box__img1">
+            <div className="gallery-images__box__image">
               <ModalImage
                 small={art1}
                 large={art1}
@@ -154,12 +155,7 @@ export default function Gallery () {
             </div>  
           </div>    
         </div>  
-
-        <div className="social-media">
-          <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank" rel="noopener noreferrer" alt="Instagram logo"><i className="fab fa-instagram"/></a>    {/* instagram */}
-          <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank" rel="noopener noreferrer" alt="Facebook logo"><i className="fab fa-facebook" /></a>    {/* facebook */}
-          <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank" rel="noopener noreferrer" alt="Linkedin logo"><i className="fab fa-linkedin" /></a>    {/* linkedin */}
-        </div>    
+        <SocialMediaNavbar/>
     </section>
   );
   }

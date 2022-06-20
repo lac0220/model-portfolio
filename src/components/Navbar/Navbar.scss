@@ -12,8 +12,8 @@ nav {
     padding-top: 6px;
     background-color: $text-color;
     img {
-      height: 4em;
       padding: 0 8px 0 7px;
+      height: 4em;
     } 
   }
 
@@ -36,27 +36,25 @@ nav {
     z-index: 1;
     overflow: hidden;
     background: $first-color;
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        margin: 80px 30px;
+        width: 90%;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $text-color;
+        &:hover {
+          transform:scale(1.2); 
+          -webkit-transform:scale(1.2);
+          color: lightgray;
+        }
+      }
+    }
   }
 
   ul.showMenu {
     width: 100%;
   }
-
-  li {
-    display: inline-block;
-    a {
-      display: inline-block;
-      margin: 80px 30px;
-      width: 90%;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: $text-color;
-      &:hover {
-          transform:scale(1.2); 
-          -webkit-transform:scale(1.2);
-          color: lightgray;
-      }
-    }
-  }
 }
-

@@ -62,7 +62,7 @@ export default function Navbar() {
 
               <li>
                 <NavHashLink
-                to="/#aboutme"
+                to="/#about-me"
                 activeClassName="active-link"
                 onClick={() => closeMenu()}
                 exact
