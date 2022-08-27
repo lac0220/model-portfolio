@@ -2,59 +2,113 @@ $first-color: black;
 $text-color:white;
 
 nav {
-  display: flex;
-  position: fixed;
-  z-index: 1;
-  width: 100vw;
-  text-align: center;
-  background-color: $first-color;
-  .nav__logo {
-    padding-top: 6px;
-    background-color: $text-color;
-    img {
-      padding: 0 8px 0 7px;
-      height: 4em;
-    } 
-  }
-
-  button {
-    position: relative;
-    right: 56px;
-    margin: auto;
-    z-index: 2;
-    cursor: pointer;
-    border: none;
-    font-size: 3rem;
-    background: transparent;
-    color: $text-color;
-  }
-
-  ul {
+    display: flex;
     position: fixed;
-    height: 15%;
-    width: 0;
     z-index: 1;
-    overflow: hidden;
-    background: $first-color;
-    li {
-      display: inline-block;
-      a {
-        display: inline-block;
-        margin: 80px 30px;
-        width: 90%;
-        text-transform: uppercase;
-        font-weight: bold;
-        color: $text-color;
-        &:hover {
-          transform:scale(1.2); 
-          -webkit-transform:scale(1.2);
-          color: lightgray;
-        }
-      }
+    width: 100vw;
+    text-align: center;
+    background-color: $first-color;
+    div {
+        padding-top: 6px;
+        background-color: $text-color;
+        img {
+            padding: 0 8px 0 7px;
+            height: 5rem;
+        } 
     }
-  }
 
-  ul.showMenu {
-    width: 100%;
-  }
+    button {
+        position: relative;
+        left: -56px;
+        margin: auto;
+        z-index: 2;
+        cursor: pointer;
+        border: none;
+        font-size: 3rem;
+        background: transparent;
+        color: $text-color;
+    }
+
+    ul {
+        position: fixed;
+        height: 130px;
+        width: 0;
+        z-index: 1;
+        overflow: hidden;
+        background-color: $first-color;
+        li {
+            display: inline-block;
+            a {
+                display: inline-block;
+                margin: 80px 28px;
+                width: 90%;
+                text-transform: uppercase;
+                font-weight: bold;
+                color: $text-color;
+                &:hover {
+                    transform:scale(1.2); 
+                    -webkit-transform:scale(1.2);
+                    color: lightgray;
+                }
+            }
+        }
+    }
+
+    ul.showMenu {
+        width: 100%;
+    }
 }
+
+@media only screen and (max-width: 1000px) {
+
+    nav {
+        button {
+            left: 32%;
+            font-size: 2.5rem;  
+        }
+    
+        ul {
+            display: flex;
+            flex-direction: column;
+            li a {
+                margin: 25px auto auto;
+                width: 100%;
+            }
+        }
+    }
+            
+    ul.showMenu {
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        div img {
+            height: 4rem;
+        } 
+
+        button {
+            left: 25%;
+        }
+        
+        ul li a {
+            margin: 15px auto auto;
+            font-size: 1.125rem;
+            &:hover {
+                transform: none; 
+                color: $text-color;
+            }
+
+            &:active {
+                color: lightgray;
+            }
+        }
+           
+        ul.showMenu {
+            height: 225px;
+        }
+    }
+}
+        

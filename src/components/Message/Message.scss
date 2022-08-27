@@ -1,24 +1,18 @@
 $first-color: black;						
 
 .message {
-    margin-right: -50%;
     position: absolute;
     top: 50%;
     left: 50%;
+    margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    &-smile {
-        position: absolute;
-        right: 0;
-        bottom: 220px;
-        max-width: 100px;
-    }
-
-    h1, h2 {
+    h1, 
+    h2 {
         padding: 25px 0;
     }
 
-    a {
+    h2 a {
         color: $first-color;
         &:hover {
             color: gray;
@@ -30,13 +24,8 @@ $first-color: black;
     
     .message {
         width: 90%;
-        &-smile {
-            position: relative;
-            right: 0;
-            top: 5px;
-        }
-
-        h1, h2 {
+        h1, 
+        h2 {
             padding: 15px 0;
         }
     }
@@ -45,26 +34,22 @@ $first-color: black;
 @media only screen and (max-width: 700px) {
 
     .message {
-        &-smile {
-            max-width: 80px;
-        }
-
-        h1 {
-            padding: 20px 0;
-            font-size: 1.563rem;
-        }
-
         h2 {
-            margin: 0;
-            font-size: 1.25rem;
+            font-size: 1.8rem;
         }
         
-        a:hover {
-            color: lightblue;
+        h2 a:hover {
+            color: $first-color;
+            &:active {
+                color: gray;
+            }
         }
+    }
+}
 
-        a:active {
-            color: blue;
-        }
+@media only screen and (max-width: 500px) {
+
+    .message h2 {
+        font-size: 1.4rem;
     }
 }

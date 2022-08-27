@@ -2,102 +2,176 @@ $first-color: black;
 $text-color:white;
 
 .home {
-  margin: auto 95px;
-  &__name {
-    background-image: url(/img/13.webp);		
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-position-y: -10%;
-    background-size: 100%;
-    padding: 300px 0;
-    color: $text-color;
-    li {
-      position: relative;
-      top: 300px;
-      padding: 0 20px;
-      width: 50%;
-      letter-spacing: 4px; 
-      text-align: center;
-      font-weight: bold;
-      background-color: $first-color;
-    }
-    
-    li:nth-child(1) {
-      margin-bottom: -5px; 
-      border-top-right-radius: 20px;
-      font-size: 3.125rem; 
-    }
-  
-    li:nth-child(2) {
-      padding-bottom: 10px;
-      font-size: 1.875rem;
-    }  
-  }
-
-  h1 {
-    padding: 30px 0;
-  }
-
-  &__slider {
-    text-align: center;
-    background-color: $first-color;
-    img{
-      margin-top: 20px;
-      border: $text-color solid 5px;
-      border-radius: 20px;
+    margin: auto 95px;
+    ul {
+        padding: 300px 0;
+        background-image: url(/img/Modeling/13.webp);		
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-position-y: -10%;
+        background-size: 100%;
+        color: $text-color;
+        li:nth-child(1),
+        li:nth-child(2) {
+            position: relative;
+            top: 300px;
+            padding: 0 20px;
+            width: 50%;
+            letter-spacing: 4px; 
+            text-align: center;
+            font-weight: bold;
+            background-color: $first-color;
+        }
+        
+        li:nth-child(1) {
+            margin-bottom: -5px; 
+            border-top-right-radius: 20px;
+            font-size: 2.813rem; 
+        }
+        
+        li:nth-child(2) {
+            padding-bottom: 10px;
+            font-size: 1.875rem;
+        }  
     }
 
-    .alice-carousel__dots {
-      margin: 0;
-      padding: 10px;
+    h2 {
+        padding: 50px 0;
+        text-align: center;
+        font-size: 2.188rem;
     }
-
-    .alice-carousel__dots-item:not(.custom) {
-      height: 15px;
-      width: 15px;
-      background-color: gray;
-      &:hover {
-        background-color: $text-color;
-      }
-    }
-
-    .alice-carousel__dots-item:not(.custom).__active {
-      background-color: $text-color;
-    }
-  }
 }
 
 @media only screen and (max-width: 1500px) {
 
-  .home {
-    &__name {
-      padding: 250px 0;
-      background-size: cover;
-      li {
-        top: 250px; 
-        width: 61%;
-      }
+    .home ul {
+        padding: 250px 0;
+        background-size: cover;
+        li:nth-child(1),
+        li:nth-child(2) {
+            top: 250px; 
+            width: 61%;
+        }
 
-      li:nth-child(1) {
-        font-size: 2.5rem;
-      }
+        li:nth-child(1) {
+            font-size: 2.5rem;
+        }
     
-      li:nth-child(2) {
-        font-size: 1.875rem; 
-      }     
+        li:nth-child(2) {
+            font-size: 1.875rem; 
+        }     
     }
-  }
 }
 
 @media only screen and (max-width: 1300px) {
 
-  .home {
-    &__name {
-      background-position-x: 90%;
+    .home {
+        ul {
+            background-position-x: 90%;
+            li:nth-child(1) {
+                font-size: 2.2rem;
+            }
+        
+            li:nth-child(2) {
+                font-size: 1.6rem; 
+            }    
+        }
+
+        h2 {
+            font-size: 1.875rem;
+        }
     }
-  }
 }
 
+@media only screen and (max-width: 1000px) {
 
-  
+    .home ul {
+        background-position-x: 85%;
+        li:nth-child(1),
+        li:nth-child(2) {
+            width: 79%;
+        }
+
+        li:nth-child(1) {
+            font-size: 1.9rem;
+        }  
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .home {
+        margin: auto 10px; 
+        ul {
+            padding: 180px 0;
+            background-size: 1000px;  
+            background-attachment: scroll;
+            background-position-x: 75%;
+            li:nth-child(1),
+            li:nth-child(2) {
+                top: 180px; 
+                width: 72%;
+            }
+
+            li:nth-child(1) {
+                font-size: 1.5rem;
+            }
+        
+            li:nth-child(2) {
+                font-size: 1.3rem; 
+            }    
+        }
+
+        h2 {
+            padding: 25px 0;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    .home {
+        ul {
+            background-position-x: 75%;
+            li:nth-child(1),
+            li:nth-child(2) {
+                width: 90%;
+            }
+
+            li:nth-child(1) {
+                font-size: 1.35rem;
+            }
+        
+            li:nth-child(2) {
+                padding-bottom: 5px;
+                font-size: 1.25rem; 
+            }    
+        }
+
+        h2 {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    .home ul {
+        li:nth-child(1),
+        li:nth-child(2) {
+            width: 100%;
+        }
+    }
+}
+   
+@media only screen and (max-width: 350px) {
+
+    .home ul {
+        li:nth-child(1),
+        li:nth-child(2) {
+            font-size: 1.2rem;
+        }
+    }
+}
