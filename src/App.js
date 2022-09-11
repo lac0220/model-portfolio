@@ -1,23 +1,27 @@
+import * as React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from './components/Navbar/navbar';
-import {SocialMediaNavbar} from './components/Navbar/social_media_navbar';
-import Home from './components/Home/home';
-import Gallery from './components/Gallery/gallery';
-import Blog from './components/Blog/blog';
-import Message from './components/Message/message';
-import Footer from './components/Footer/footer';
+import Navbar from './components/Navbar/Navbar';
+import {NavbarSocialMedia} from './components/Navbar/NavbarSocialMedia';
+import Footer from './components/Footer/Footer';
+import LoadingSpinner from "./components/Loading_Spinner/LoadingSpinner";
+
+const LazyHome = React.lazy(() => import("./components/Home/Home"));
+const LazyBlog = React.lazy(() => import("./components/Blog/Blog"));
+const LazyGallery = React.lazy(() => import("./components/Gallery/Gallery"));
+const LazyMessage = React.lazy(() => import("./components/Message/Message"));
 
 export default function App() {
+
     return (
         <BrowserRouter>
             <Navbar />
-            <SocialMediaNavbar/>
+            <NavbarSocialMedia />
             <Routes>
-                <Route path="/catalina-plamadeala-portfolio" element={ <Home/> } />
-                <Route path="/catalina-plamadeala-portfolio/gallery" element={ <Gallery/> } />
-                <Route path="/catalina-plamadeala-portfolio/blog" element={ <Blog/> } />
-                <Route path="/catalina-plamadeala-portfolio/message" element={<Message />} />
+                <Route path="/model-portfolio" element={ <React.Suspense fallback={<><LoadingSpinner /></>}><LazyHome /></React.Suspense>} />
+                <Route path="/model-portfolio/gallery" element={ <React.Suspense fallback={<><LoadingSpinner /></>}><LazyGallery /></React.Suspense>} />
+                <Route path="/model-portfolio/blog" element={<React.Suspense fallback={<><LoadingSpinner /></>}><LazyBlog /></React.Suspense>} />
+                <Route path="/model-portfolio/message" element={<React.Suspense fallback={<><LoadingSpinner /></>}><LazyMessage /></React.Suspense>} />
             </Routes>
             <Footer />
         </BrowserRouter>

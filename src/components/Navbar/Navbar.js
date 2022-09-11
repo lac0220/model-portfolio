@@ -19,24 +19,36 @@ export default function Navbar() {
     return (
         <nav>
             <div>
-                <HashLink to="/catalina-plamadeala-portfolio/#home"><img src={logo} alt="Logo" /></HashLink>
+                <HashLink 
+                    to="/model-portfolio/#home"><img src={logo} alt="Logo" />
+                </HashLink>
             </div>   
-            <button onClick={handleToggle}>{navbarOpen ? (<MdClose/>) : (<FiMenu/>)}</button> 
+            <button aria-label="Navigation" onClick={handleToggle}>{navbarOpen ? (<MdClose/>) : (<FiMenu/>)}</button> 
             <ul className={`${navbarOpen ? " showMenu" : ""}`}> 
                 <li>
-                    <NavLink to="/catalina-plamadeala-portfolio" onClick={() => closeMenu()}>Home</NavLink>
+                    <NavLink 
+                        to="/model-portfolio" onClick={() => closeMenu()}>Home
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/catalina-plamadeala-portfolio/gallery" onClick={() => closeMenu()}>Gallery</NavLink>
+                    <NavLink 
+                        to="/model-portfolio/gallery" onClick={() => closeMenu()}>Gallery
+                    </NavLink>
                 </li>
                 <li>
-                    <NavLink to="/catalina-plamadeala-portfolio/blog" onClick={() => closeMenu()}>Blog</NavLink>
+                    <NavLink 
+                        to="/model-portfolio/blog" onClick={() => closeMenu()}>Blog
+                    </NavLink>
                 </li>
                 <li>
-                    <HashLink to="/catalina-plamadeala-portfolio/#about-me" onClick={() => closeMenu()}>About me</HashLink>
+                    <HashLink 
+                        to="/model-portfolio/#about-me" onClick={() => closeMenu()}>About me
+                    </HashLink>
                 </li>
                 <li>
-                    <HashLink to="/catalina-plamadeala-portfolio/#contact" onClick={() => closeMenu()}>Contact</HashLink>
+                    <HashLink 
+                        to="/model-portfolio/#contact" onClick={() => closeMenu()}>Contact
+                    </HashLink>
                 </li>
             </ul>
         </nav>

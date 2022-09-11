@@ -1,15 +1,22 @@
 import './home.scss';
 import './about.scss';
 import './contact.scss';
-import {SlidingImages} from '../Sliding_Images/sliding_images';
+import { useEffect } from 'react';
+import {SlidingImages} from '../Sliding_Images/SlidingImages';
 import { Link } from 'react-router-dom';
 import img_modeling1 from '../../img/Modeling/8.webp';
 import img_modeling2 from '../../img/Modeling/5.webp';
 import img_art1 from '../../img/Art/art2.webp';
 import img_art2 from '../../img/Art/art1.webp';
 import img_contact from '../../img/Modeling/10.webp';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []) 
+
     return (
         <>
             {/* home header  */}    
@@ -25,7 +32,7 @@ export default function Home() {
             <div id="about-me" className="about-me">      
                 <h1>This is about me</h1>
                 <div>
-                    <Link to='/catalina-plamadeala-portfolio/gallery'>
+                    <Link to='/model-portfolio/gallery'>
                         <button>Gallery 
                             <div>
                                 <img src={img_modeling1} className="modeling1" alt="Modeling1"/>
@@ -48,7 +55,7 @@ export default function Home() {
                         </label>
                         <label htmlFor="email">
                             <input type="text" id="email" name="email" required placeholder='Email*'/>
-                            <input type="hidden" name="_next" defaultValue="http://lac0220.github.io/catalina-plamadeala-portfolio/message.html" />
+                            <input type="hidden" name="_next" defaultValue="http://lac0220.github.io/model-portfolio/message.html" />
                         </label>
                         <label htmlFor="subject">
                             <input type="text" id="subject" name="subject" placeholder='Subject' />
@@ -63,8 +70,8 @@ export default function Home() {
                     <img src={img_contact} alt="Contact"/>
                 </div> 
                 <div>
-                    <Link to='/catalina-plamadeala-portfolio/blog'>
-                        <h2>Visit my blog<i className="fas fa-chevron-right"></i></h2>
+                    <Link to='/model-portfolio/blog'>
+                        <h2>Visit my blog<FontAwesomeIcon icon={faBookmark} style={{marginLeft: '8px'}}/></h2>
                     </Link> 
                 </div> 
             </div>

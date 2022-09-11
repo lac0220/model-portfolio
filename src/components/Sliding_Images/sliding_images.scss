@@ -50,3 +50,10 @@ $text-color:white;
         }
     }
 }
+
+@media only screen and (max-width: 500px) {
+
+    .sliding-images {
+        margin: auto;
+    }
+}

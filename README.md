@@ -27,6 +27,8 @@ Used third-party libraries:
 - react-alice-carousel: for sliding images
 
 - react-modal-image: for modal images with zoom
+
+- font awesome: for icons
 ## Version
 
 1.0 - 27/08/2022 - Publishing of the website

@@ -62,27 +62,25 @@ $text-color:white;
 
 @media only screen and (max-width: 1300px) {
 
-    .gallery {
-        ul {
-            gap: 20px;
-            li {
-                h2 {
-                    font-size: 2rem;
-                }
+    .gallery ul {
+        gap: 20px;
+        li {
+            h2 {
+                font-size: 2rem;
+            }
 
-                .gallery-container { 
-                    column-gap: 20px;
-                    row-gap: 10px; 
-                }
-            } 
-        }
+            .gallery-container { 
+                column-gap: 20px;
+                row-gap: 10px; 
+            }
+        } 
     }
 }
 
 @media only screen and (max-width: 1000px) {
 
     .gallery {
-        padding: 85px 0 40px;
+        padding: 80px 0 40px;
         ul {
             gap: 25px;
             li {
@@ -104,6 +102,7 @@ $text-color:white;
 
     .gallery {
         margin: auto 10px;
+        padding: 70px 0 40px;
         ul {
             gap: 5px;
         }
@@ -112,16 +111,19 @@ $text-color:white;
 
 @media only screen and (max-width: 500px) {
 
-    .gallery ul {
-        gap: 0;
-        li {
-            h2 {
-                font-size: 1.2rem;
-            }
+    .gallery {
+        padding: 50px 0 20px;
+        ul {
+            gap: 0;
+            li {
+                h2 {
+                    font-size: 1.2rem;
+                }
 
-            .gallery-container { 
-                row-gap: 10px; 
-            }
-        } 
+                .gallery-container { 
+                    row-gap: 10px; 
+                }
+            } 
+        }
     }
 }

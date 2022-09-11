@@ -13,10 +13,7 @@ $first-color: black;
     }
 
     h2 a {
-        color: $first-color;
-        &:hover {
-            color: gray;
-        }
+        color:gray;
     }
 }
   
@@ -33,17 +30,8 @@ $first-color: black;
   
 @media only screen and (max-width: 700px) {
 
-    .message {
-        h2 {
-            font-size: 1.8rem;
-        }
-        
-        h2 a:hover {
-            color: $first-color;
-            &:active {
-                color: gray;
-            }
-        }
+    .message h2 {
+        font-size: 1.8rem;
     }
 }
 

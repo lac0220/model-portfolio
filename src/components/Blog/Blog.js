@@ -1,10 +1,15 @@
-import Post from "./post";
 import './blog_post.scss';
+import Post from "./Post";
+import { useEffect } from 'react';
 import img_blog1 from '../../img/Blog/blog1.webp';
 import img_blog2 from '../../img/Blog/blog2.webp';
 import img_blog3 from '../../img/Blog/blog3.webp';
 
 export default function Blog () {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []) 
+      
     const blogPosts = [
         {
             title: "Post1",

@@ -1,4 +1,5 @@
 import './gallery.scss';
+import { useEffect } from 'react';
 import ModalImage from "react-modal-image";
 import img_modeling1 from '../../img/Modeling/1.webp';
 import img_modeling2 from '../../img/Modeling/2.webp';
@@ -17,7 +18,11 @@ import img_modeling15 from '../../img/Modeling/15.webp';
 import img_art1 from '../../img/Art/art2.webp';
 import img_art2 from '../../img/Art/art1.webp';
 
-export default function Gallery () {  
+export default function Gallery () { 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []) 
+
     return (
         <div className="gallery">
             <h1>Gallery</h1>
@@ -45,7 +50,7 @@ export default function Gallery () {
                             large={img_modeling3}
                             hideDownload="true"
                         />
-                         <ModalImage
+                        <ModalImage
                             small={img_modeling14}
                             large={img_modeling14}
                             hideDownload="true"

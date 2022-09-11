@@ -1,7 +1,7 @@
 {
     "name": "model-portfolio",
     "version": "0.1.0",
-    "homepage": "https://lac0220.github.io/catalina-plamadeala-portfolio",
+    "homepage": "https://lac0220.github.io/model-portfolio",
     "private": true,
     "dependencies": {
         "@fortawesome/fontawesome-svg-core": "^6.2.0",
@@ -32,20 +32,20 @@
     },
     "eslintConfig": {
         "extends": [
-        "react-app",
-        "react-app/jest"
+            "react-app",
+            "react-app/jest"
         ]
     },
     "browserslist": {
         "production": [
-        ">0.2%",
-        "not dead",
-        "not op_mini all"
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
         ],
         "development": [
-        "last 1 chrome version",
-        "last 1 firefox version",
-        "last 1 safari version"
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
         ]
     },
     "devDependencies": {
