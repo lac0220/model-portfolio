@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkmodel_portfolio=self.webpackChunkmodel_portfolio||[]).push([[506],{506:function(e,o,s){s.r(o),s.d(o,{default:function(){return n}});var l=s(3504),r=s(184);function n(){return(0,r.jsxs)("div",{className:"message",children:[(0,r.jsx)("h1",{children:"Thank you for your message"}),(0,r.jsx)("h1",{children:"I will get back to you as soon as possible"}),(0,r.jsxs)("h2",{children:["Back to the",(0,r.jsx)(l.rU,{to:"/model-portfolio",children:" home page"})]})]})}}}]);
+//# sourceMappingURL=506.e570de93.chunk.js.map
