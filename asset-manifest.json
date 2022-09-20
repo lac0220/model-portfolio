@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/model-portfolio/static/css/main.fd7c5340.css",
-    "main.js": "/model-portfolio/static/js/main.4fd61006.js",
-    "static/css/601.a3585d30.chunk.css": "/model-portfolio/static/css/601.a3585d30.chunk.css",
-    "static/js/601.01863d3e.chunk.js": "/model-portfolio/static/js/601.01863d3e.chunk.js",
+    "main.css": "/model-portfolio/static/css/main.96f52cb1.css",
+    "main.js": "/model-portfolio/static/js/main.c9b668f5.js",
+    "static/css/601.4cd45f92.chunk.css": "/model-portfolio/static/css/601.4cd45f92.chunk.css",
+    "static/js/601.144995c0.chunk.js": "/model-portfolio/static/js/601.144995c0.chunk.js",
     "static/css/790.b5c0b4c9.chunk.css": "/model-portfolio/static/css/790.b5c0b4c9.chunk.css",
     "static/js/790.bf32aa05.chunk.js": "/model-portfolio/static/js/790.bf32aa05.chunk.js",
     "static/css/344.eb22b189.chunk.css": "/model-portfolio/static/css/344.eb22b189.chunk.css",
     "static/js/344.b2c21abd.chunk.js": "/model-portfolio/static/js/344.b2c21abd.chunk.js",
     "static/css/506.8c8e9fe3.chunk.css": "/model-portfolio/static/css/506.8c8e9fe3.chunk.css",
     "static/js/506.e570de93.chunk.js": "/model-portfolio/static/js/506.e570de93.chunk.js",
-    "static/js/164.e5877014.chunk.js": "/model-portfolio/static/js/164.e5877014.chunk.js",
+    "static/js/164.b69ef71a.chunk.js": "/model-portfolio/static/js/164.b69ef71a.chunk.js",
     "static/media/13.webp": "/model-portfolio/static/media/13.d481f08ff7b8b7ab5697.webp",
     "static/media/15.webp": "/model-portfolio/static/media/15.d0d1a50de6be09b342d4.webp",
     "static/media/14.webp": "/model-portfolio/static/media/14.267dbb7fe8cf34d79958.webp",
@@ -26,27 +26,27 @@
     "static/media/9.webp": "/model-portfolio/static/media/9.53cf2e60d7216658f341.webp",
     "static/media/6.webp": "/model-portfolio/static/media/6.b3465a7535e69738a5f6.webp",
     "static/media/4.webp": "/model-portfolio/static/media/4.693ba092ae084764f0d8.webp",
+    "static/media/logo.webp": "/model-portfolio/static/media/logo.3c539cbbe0732157e43f.webp",
     "static/media/2.webp": "/model-portfolio/static/media/2.f13245da49acfac41b64.webp",
     "static/media/11.webp": "/model-portfolio/static/media/11.de92287d29364a9e9c03.webp",
     "static/media/8.webp": "/model-portfolio/static/media/8.909ba5f31c35df322846.webp",
     "static/media/12.webp": "/model-portfolio/static/media/12.5196be9aeb812737bfe0.webp",
     "static/media/3.webp": "/model-portfolio/static/media/3.be15d09479a10b16d78e.webp",
-    "static/media/logo.webp": "/model-portfolio/static/media/logo.a209c1a86662aefd679a.webp",
     "index.html": "/model-portfolio/index.html",
-    "main.fd7c5340.css.map": "/model-portfolio/static/css/main.fd7c5340.css.map",
-    "main.4fd61006.js.map": "/model-portfolio/static/js/main.4fd61006.js.map",
-    "601.a3585d30.chunk.css.map": "/model-portfolio/static/css/601.a3585d30.chunk.css.map",
-    "601.01863d3e.chunk.js.map": "/model-portfolio/static/js/601.01863d3e.chunk.js.map",
+    "main.96f52cb1.css.map": "/model-portfolio/static/css/main.96f52cb1.css.map",
+    "main.c9b668f5.js.map": "/model-portfolio/static/js/main.c9b668f5.js.map",
+    "601.4cd45f92.chunk.css.map": "/model-portfolio/static/css/601.4cd45f92.chunk.css.map",
+    "601.144995c0.chunk.js.map": "/model-portfolio/static/js/601.144995c0.chunk.js.map",
     "790.b5c0b4c9.chunk.css.map": "/model-portfolio/static/css/790.b5c0b4c9.chunk.css.map",
     "790.bf32aa05.chunk.js.map": "/model-portfolio/static/js/790.bf32aa05.chunk.js.map",
     "344.eb22b189.chunk.css.map": "/model-portfolio/static/css/344.eb22b189.chunk.css.map",
     "344.b2c21abd.chunk.js.map": "/model-portfolio/static/js/344.b2c21abd.chunk.js.map",
     "506.8c8e9fe3.chunk.css.map": "/model-portfolio/static/css/506.8c8e9fe3.chunk.css.map",
     "506.e570de93.chunk.js.map": "/model-portfolio/static/js/506.e570de93.chunk.js.map",
-    "164.e5877014.chunk.js.map": "/model-portfolio/static/js/164.e5877014.chunk.js.map"
+    "164.b69ef71a.chunk.js.map": "/model-portfolio/static/js/164.b69ef71a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fd7c5340.css",
-    "static/js/main.4fd61006.js"
+    "static/css/main.96f52cb1.css",
+    "static/js/main.c9b668f5.js"
   ]
 }
