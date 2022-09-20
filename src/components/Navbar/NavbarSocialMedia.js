@@ -9,9 +9,9 @@ export function NavbarSocialMedia() {
         
     return (
         <div className="social-media">
-            <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank" rel="noopener noreferrer" alt="Instagram logo" title="Instagram"><FontAwesomeIcon icon={faInstagram}/></a>
-            < a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" alt="Facebook logo" title="Facebook"><FontAwesomeIcon icon={faFacebook}/></a>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" alt="Linkedin logo" title="Linkedin"><FontAwesomeIcon icon={faLinkedin}/></a>
+            <a href="https://www.linkedin.com/in/catalinaplamadeala97" target="_blank" rel="noopener noreferrer" title="Visit me on Instagram"><FontAwesomeIcon icon={faInstagram}/></a>
+            < a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" title="Visit me on Facebook"><FontAwesomeIcon icon={faFacebook}/></a>
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" title="Visit me on Linkedin"><FontAwesomeIcon icon={faLinkedin}/></a>
         </div> 
     );
 }

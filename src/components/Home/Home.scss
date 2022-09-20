@@ -41,6 +41,15 @@ $text-color:white;
         text-align: center;
         font-size: 2.188rem;
     }
+
+    &::after{
+        position:absolute; 
+        width:0; 
+        height:0; 
+        overflow:hidden; 
+        z-index:-1; // hide images
+        content:url(/img/Modeling/13.webp); // load images
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -98,6 +107,10 @@ $text-color:white;
             li:nth-child(1) {
                 font-size: 1.9rem;
             }  
+
+            li:nth-child(2) {
+                padding-bottom: 5px;
+            }  
         }
 
         h2 {
@@ -154,7 +167,7 @@ $text-color:white;
             }
         
             li:nth-child(2) {
-                padding-bottom: 5px;
+                padding-bottom: 2px;
                 font-size: 1.1rem; 
             }    
         }
