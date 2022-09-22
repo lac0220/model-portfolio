@@ -7,7 +7,7 @@ export default function Footer() {
         
     return (
         <footer>
-            <p>Copyright © Catalina Plamadeala 2022</p>
+            <p>Copyright © Catalina Plamadeala <span style={{fontFamily: 'Times New Roman'}}>2022</span></p>
             <p>Web design by Laszlo Nemeth</p>
         </footer>
     );

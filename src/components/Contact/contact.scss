@@ -29,7 +29,15 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 color: $text-color;
             }
 
-            input[type=text]:required:focus:invalid {
+            span {
+                position: relative;
+                bottom: 7px;
+                font-weight: bold;
+                font-size: 1.375rem;
+                color: red;
+            }
+
+            input[type=text]:focus {
                 border: 2px solid red;
             }
                 
@@ -99,7 +107,8 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
                 width: 70%;
                 input[type=text], 
                 textarea,
-                input[type=submit] {
+                input[type=submit],
+                span {
                     font-size: 1.25rem;
                 }
             }
@@ -112,7 +121,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         
         div h2 {
             margin: 10px 0 20px;
-            font-size: 1.750rem;
         }
     }
 }
@@ -159,7 +167,8 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
             padding-bottom: 20px;
             input[type=text], 
             textarea,
-            input[type=submit] {      
+            input[type=submit],
+            span {      
                 font-size: 1.125rem;  
             }
         }
@@ -167,10 +176,6 @@ $main-font: Georgia, 'Times New Roman', Times, serif;
         img {
             margin-top: 0;
             max-height: 400px;
-        }
-
-        div h2 {
-            font-size: 1.25rem;
         }
     }
 }

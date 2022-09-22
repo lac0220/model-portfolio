@@ -38,8 +38,6 @@ $text-color:white;
 
     h2 {
         padding: 50px 0;
-        text-align: center;
-        font-size: 2.188rem;
     }
 
     &::after{
@@ -89,7 +87,6 @@ $text-color:white;
 
         h2 {
             padding: 35px 0;
-            font-size: 1.875rem;
         }
     }
 }
@@ -144,8 +141,8 @@ $text-color:white;
         }
 
         h2 {
-            padding: 25px 0;
-            font-size: 1.5rem;
+            padding: 25px 5px;
+            font-size: 1.8rem;
         }
     }
 }
@@ -173,8 +170,8 @@ $text-color:white;
         }
 
         h2 {
-            padding: 20px 0;
-            font-size: 1.25rem;
+            padding: 20px 5px;
+            font-size: 1.5rem;
         }
     }
 }

@@ -24,7 +24,7 @@ $text-color:white;
             padding: 10px;
             img {
                 padding: 10px; 
-                max-height: 270px;
+                max-height: 262px;
                 width: 225px;
                 object-fit: cover;
                 border: $text-color solid 5px;
@@ -56,7 +56,7 @@ $text-color:white;
 @media only screen and (max-width: 1450px) {
 
     .about-me div button div img {
-        width: 167px;
+        width: 160px;
     }  
 }
 
@@ -66,7 +66,7 @@ $text-color:white;
         font-size: 2rem;
         div {
             img {
-                width: 179px;
+                width: 176px;
             }
             
             .art1 {
@@ -148,7 +148,6 @@ $text-color:white;
 @media only screen and (max-width: 500px) {
 
     .about-me div button {
-        font-size: 1.5rem;
         div {
             img {
                 max-height: 340px;
@@ -171,6 +170,3 @@ $text-color:white;
         }
     } 
 }
-        
-  
-        

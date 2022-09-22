@@ -2,7 +2,7 @@ import * as React from 'react';
 import './App.scss';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
-import {NavbarSocialMedia} from './components/Navbar/NavbarSocialMedia';
+import NavbarSocialMedia from './components/Navbar/NavbarSocialMedia';
 import Footer from './components/Footer/Footer';
 import LoadingSpinner from "./components/Loading_Spinner/LoadingSpinner";
 

@@ -40,8 +40,7 @@ nav {
             display: inline-block;
             a {
                 display: inline-block;
-                margin: 80px 28px;
-                width: 90%;
+                margin: 80px 10px 0 55px;
                 text-transform: uppercase;
                 font-weight: bold;
                 color: $text-color;
@@ -91,6 +90,7 @@ nav {
 
         button {
             left: 25%;
+            top: 4px;
         }
         
         ul li a {
@@ -119,6 +119,10 @@ nav {
             height: 3rem;
         } 
 
+        button {
+            top: 5px;
+        }
+
         ul li a {
             margin: 18px auto auto;
         }
@@ -127,6 +131,4 @@ nav {
             height: 240px;
         }
     }
-}
-        
-        
+}       

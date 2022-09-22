@@ -1,26 +1,24 @@
 import './home.scss';
 import './about.scss';
-import './contact.scss';
-import { useEffect } from 'react';
-import {SlidingImages} from '../Sliding_Images/SlidingImages';
-import { Link } from 'react-router-dom';
 import img_modeling1 from '../../img/Modeling/8.webp';
 import img_modeling2 from '../../img/Modeling/5.webp';
 import img_art1 from '../../img/Art/art2.webp';
 import img_art2 from '../../img/Art/art1.webp';
-import img_contact from '../../img/Modeling/10.webp';
+import SlidingImages from '../Sliding_Images/SlidingImages';
+import {Contact} from '../Contact/Contact';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookmark } from '@fortawesome/free-solid-svg-icons';
 import { faFolderOpen } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+
     useEffect(() => {
         window.scrollTo(0, 0)
       }, []) 
 
     return (
         <>
-            {/* home header  */}    
             <div id="home" className="home">            
                 <ul>
                     <li>Catalina Plamadeala</li>
@@ -29,7 +27,6 @@ export default function Home() {
                 <h2><i>"Life is art. Art is life. I never separate it." &#45; Ai Weiwei</i></h2>
             </div>
             <SlidingImages/>    
-            {/* about me section  */}                         
             <div id="about-me" className="about-me">      
                 <h1>This is about me</h1>
                 <div>
@@ -46,36 +43,7 @@ export default function Home() {
                 </div>   
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto aspernatur voluptatibus laudantium assumenda sequi accusamus qui dolor saepe dicta! Dolores temporibus sit aliquid harum omnis inventore praesentium hic eaque id?</p>
             </div>  
-            {/* contact section  */}                         
-            <div id="contact" className="contact">
-                <h1>Get in touch with me</h1>
-                <div className="contact-container">
-                    <form action="https://formsubmit.co/pl.catalina97@gmail.com " method="POST">
-                        <label htmlFor="name">
-                            <input type="text" id="name" name="name" required placeholder='Name*'/>
-                        </label>
-                        <label htmlFor="email">
-                            <input type="text" id="email" name="email" required placeholder='Email*'/>
-                            <input type="hidden" name="_next" defaultValue="http://lac0220.github.io/model-portfolio/message.html" />
-                        </label>
-                        <label htmlFor="subject">
-                            <input type="text" id="subject" name="subject" placeholder='Subject' />
-                        </label>
-                        <label htmlFor="message">
-                            <textarea id="comment" name="comment" placeholder='Your message' style={{height: '200px'}} alt="Textarea" defaultValue={""} />
-                        </label>
-                        <label className="contact-submit">
-                            <input type="submit" value="Send" />
-                        </label>
-                    </form>
-                    <img src={img_contact} alt="Contact"/>
-                </div> 
-                <div>
-                    <Link to='/model-portfolio/blog'>
-                        <h2>Visit my blog <FontAwesomeIcon icon={faBookmark}/></h2>
-                    </Link> 
-                </div> 
-            </div>
+            <Contact/>    
         </>
     );
 }

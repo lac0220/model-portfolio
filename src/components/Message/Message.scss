@@ -2,18 +2,23 @@ $first-color: black;
 
 .message {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    h1, 
-    h2 {
+    h1 {
         padding: 25px 0;
+        font-size: 3rem;
     }
 
-    h2 a {
-        color:gray;
+    h2 {
+        margin-top: 200px;
+        font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+        font-size: 1.8rem;
+        a {
+            color:gray;
+        }
     }
 }
   
@@ -30,14 +35,29 @@ $first-color: black;
   
 @media only screen and (max-width: 700px) {
 
-    .message h2 {
-        font-size: 1.8rem;
+    .message {
+        top: 50%;
+        h1 {
+            font-size: 2.5rem; 
+        }
+
+        h2 {
+            margin-top: 100px;
+            font-size: 1.6rem;
+        }
     }
 }
 
 @media only screen and (max-width: 500px) {
 
-    .message h2 {
-        font-size: 1.4rem;
+    .message {
+        top: 55%;
+        h1 {
+            font-size: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.25rem;
+        }
     }
 }

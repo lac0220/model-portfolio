@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap'); // font
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap'); // font
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap'); // font
 
 $first-color: black;					
 $text-color:white;
@@ -18,19 +19,25 @@ body {
     overflow-y: scroll; /* Show scroll-bars */
 }
  
-html, body {
+html, 
+body {
     height: 100vh;
-    scroll-padding-top: 10%; /* Equals to fixed navbar height for mobile usage*/
+    scroll-padding-top: 90px; /* Equals to fixed navbar height for mobile usage*/
     scroll-behavior: smooth;
     line-height: 1.5;
-    font-family: "Playfair Display", 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
     background: $text-color;
 }
 
 h1 {
     padding: 30px 0 20px;
+}
+
+h1, 
+h2 {
     text-align: center;
-    font-size: 2.188rem;
+    font-family: 'Dancing Script', 'Times New Roman', Times, serif;
+    font-size: 2.8rem;
 }
 
 li {
@@ -43,8 +50,9 @@ a {
 
 @media screen and (max-width: 1300px) {
 
-    h1 {
-        font-size: 2rem;
+    h1,
+    h2 {
+        font-size: 2.5rem;
     }
 }
 
@@ -52,7 +60,11 @@ a {
 
     h1 {
         padding: 30px 0 15px;
-        font-size: 1.875rem;
+    }
+
+    h1,
+    h2 {
+        font-size: 2.2rem;
     }
 
     p {
@@ -62,6 +74,11 @@ a {
 
 @media screen and (max-width: 700px) {
 
+    html, 
+    body {
+        scroll-padding-top: 75px;
+    }
+
     h1 {
         padding: 20px 0 10px;
     }
@@ -69,12 +86,17 @@ a {
       
 @media screen and (max-width: 500px) {
 
-    h1 {
-        font-size: 1.5rem;
+    html, 
+    body {
+        scroll-padding-top: 60px;
+    }
+
+    h1,
+    h2 {
+        font-size: 2rem;
     }
 
     p {
         font-size: 1rem;
     }
 }
-  

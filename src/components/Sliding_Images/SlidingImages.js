@@ -7,7 +7,7 @@ import img_modeling3 from '../../img/Modeling/7.webp';
 import img_modeling4 from '../../img/Modeling/9.webp';
 import img_modeling5 from '../../img/Modeling/6.webp';
 
-export function SlidingImages() {
+export default function SlidingImages() {
     return (
         <div className="sliding-images">
             <AliceCarousel autoPlay autoPlayInterval="2000" infinite autoPlayStrategy="none" animationDuration="2000" disableButtonsControls="false">

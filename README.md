@@ -1,6 +1,7 @@
 # Model portfolio
 
-​​The web application is designed for a modal | artist with a gallery and a blog section.
+​​The web application is designed for a model & artist with a gallery and a blog section. 
+The contact form is set with EmailsJS account for sending messages to a Gmail email address.
 Mobile-friendly web design 
 
 ## Tech Stack
@@ -11,24 +12,28 @@ Mobile-friendly web design
 
 ## Setup
 
-To run this project locally:
-
-```
-$ npx create-react-app my-app
-$ cd my-app
-$ npm start
-```
 Used [React](https://reactjs.org/) for implementation
 
-Used third-party libraries:
+### To run this project locally:
 
-- react-router-dom and react-router-hash-link: for the navbar of the application
+```
+cd ../lorem
+$ npm install
+$ npm start
+```
+Third-Party NPM Packages:
+
+- node-sass: for compiling .scss files to css
+
+- react-router-dom and react-router-hash-link: for client side routing
+
+- emailjs/browser: for sending emails via contact form with EmailJS account
 
 - react-alice-carousel: for sliding images
 
 - react-modal-image: for modal images with zoom
 
-- font awesome: for icons
+- font awesome: for icon library and toolkit
 ## Version
 
 1.0 - 27/08/2022 - Publishing of the website
