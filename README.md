@@ -29,6 +29,8 @@ Third-Party NPM Packages:
 
 - emailjs/browser: for sending emails via contact form with EmailJS account
 
+- react-hook-form: for form validation
+
 - react-alice-carousel: for sliding images
 
 - react-modal-image: for modal images with zoom

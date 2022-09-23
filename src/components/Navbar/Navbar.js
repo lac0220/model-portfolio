@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 import { NavLink } from 'react-router-dom';
 import { MdClose } from "react-icons/md"
 import { FiMenu } from "react-icons/fi"
-import logo from '../../img/logo.webp';
+import logo from '../../img/logo.svg';
 
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = useState(false)
