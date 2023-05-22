@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
 import NavbarSocialMedia from './components/Navbar/NavbarSocialMedia';
 import Footer from './components/Footer/Footer';
-import LoadingSpinner from "./components/Loading_Spinner/LoadingSpinner";
+import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
 
 const LazyHome = React.lazy(() => import("./components/Home/Home"));
 const LazyBlog = React.lazy(() => import("./components/Blog/Blog"));
@@ -12,7 +12,6 @@ const LazyGallery = React.lazy(() => import("./components/Gallery/Gallery"));
 const LazyMessage = React.lazy(() => import("./components/Message/Message"));
 
 export default function App() {
-
     return (
         <BrowserRouter>
             <Navbar />
@@ -27,4 +26,3 @@ export default function App() {
         </BrowserRouter>
     );
 }
-

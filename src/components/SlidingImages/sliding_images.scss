@@ -6,6 +6,7 @@ $text-color:white;
     background-color: $first-color;
     img {
         margin-top: 20px;
+        max-height: 700px;
         border: $text-color solid 5px;
         border-radius: 20px;
     }
@@ -42,6 +43,10 @@ $text-color:white;
         margin: auto 10px;
         img {
             max-height: 400px;
+        }
+
+        .alice-carousel__dots {
+            padding: 5px 0 10px;
         }
 
         .alice-carousel__dots-item:not(.custom) {

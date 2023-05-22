@@ -15,10 +15,17 @@ import img_modeling11 from '../../img/Modeling/11.webp';
 import img_modeling12 from '../../img/Modeling/12.webp';
 import img_modeling14 from '../../img/Modeling/14.webp';
 import img_modeling15 from '../../img/Modeling/15.webp';
-import img_art1 from '../../img/Art/art2.webp';
-import img_art2 from '../../img/Art/art1.webp';
+import img_art1 from '../../img/Art/art1.webp';
+import img_art2 from '../../img/Art/art2.webp';
+import img_art3 from '../../img/Art/art3.webp';
+import img_art4 from '../../img/Art/art4.webp';
+import img_art5 from '../../img/Art/art5.webp';
+import img_art6 from '../../img/Art/art6.webp';
+import img_art7 from '../../img/Art/art7.webp';
+import img_art8 from '../../img/Art/art8.webp';
 
 export default function Gallery () { 
+    //scroll to the top once open
     useEffect(() => {
         window.scrollTo(0, 0)
       }, []) 
@@ -31,8 +38,8 @@ export default function Gallery () {
                     <h2>Modeling</h2>
                     <div className="gallery-container">
                         <ModalImage
-                            small={img_modeling15}
-                            large={img_modeling15}
+                            small={img_modeling7}
+                            large={img_modeling7}
                             hideDownload="true"
                         />
                         <ModalImage
@@ -40,14 +47,9 @@ export default function Gallery () {
                             large={img_modeling2}
                             hideDownload="true"
                         />
-                        <ModalImage
-                            small={img_modeling10}
-                            large={img_modeling10}
-                            hideDownload="true"
-                        />
                         <ModalImage 
-                            small={img_modeling3} 
-                            large={img_modeling3}
+                            small={img_modeling6} 
+                            large={img_modeling6}
                             hideDownload="true"
                         />
                         <ModalImage
@@ -71,11 +73,6 @@ export default function Gallery () {
                             hideDownload="true"
                         />
                         <ModalImage
-                            small={img_modeling9}
-                            large={img_modeling9}
-                            hideDownload="true"
-                        />
-                        <ModalImage
                             small={img_modeling5}
                             large={img_modeling5}
                             hideDownload="true"
@@ -86,8 +83,8 @@ export default function Gallery () {
                             hideDownload="true"
                         />
                         <ModalImage
-                            small={img_modeling6}
-                            large={img_modeling6}
+                            small={img_modeling9}
+                            large={img_modeling9}
                             hideDownload="true"
                         />
                         <ModalImage
@@ -96,8 +93,18 @@ export default function Gallery () {
                             hideDownload="true"
                         />
                          <ModalImage
-                            small={img_modeling7}
-                            large={img_modeling7}
+                            small={img_modeling15}
+                            large={img_modeling15}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_modeling3}
+                            large={img_modeling3}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_modeling10}
+                            large={img_modeling10}
                             hideDownload="true"
                         />
                     </div>  
@@ -114,6 +121,36 @@ export default function Gallery () {
                         <ModalImage
                             small={img_art2}
                             large={img_art2}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art3}
+                            large={img_art3}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art4}
+                            large={img_art4}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art6}
+                            large={img_art6}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art7}
+                            large={img_art7}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art8}
+                            large={img_art8}
+                            hideDownload="true"
+                        />
+                        <ModalImage
+                            small={img_art5}
+                            large={img_art5}
                             hideDownload="true"
                         />
                     </div>  

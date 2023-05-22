@@ -12,4 +12,3 @@ export default function Post ({ post: { title, img, text, date } }) {
         </div>
     )
 }
-  

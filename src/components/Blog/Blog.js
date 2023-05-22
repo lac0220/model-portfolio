@@ -6,6 +6,7 @@ import img_blog2 from '../../img/Blog/blog2.webp';
 import img_blog3 from '../../img/Blog/blog3.webp';
 
 export default function Blog () {
+    //scroll to the top once open
     useEffect(() => {
         window.scrollTo(0, 0)
     }, []) 
@@ -42,4 +43,3 @@ export default function Blog () {
         </div>
     );
 };
-    

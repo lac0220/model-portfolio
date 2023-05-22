@@ -8,6 +8,7 @@ import logo from '../../img/logo.svg';
 
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = useState(false)
+
     const handleToggle = () => {
         setNavbarOpen(!navbarOpen)
     }
@@ -20,34 +21,49 @@ export default function Navbar() {
         <nav>
             <div>
                 <HashLink 
-                    to="/model-portfolio/#home"><img src={logo} alt="Logo" />
+                    to="/model-portfolio/#home">
+                    <img src={logo} alt="Logo" />
                 </HashLink>
             </div>   
-            <button aria-label="Navigation" onClick={handleToggle}>{navbarOpen ? (<MdClose/>) : (<FiMenu/>)}</button> 
+            <button 
+                aria-label="Navigation" 
+                onClick={handleToggle}>
+                {navbarOpen ? (<MdClose/>) : (<FiMenu/>)}
+            </button> 
             <ul className={`${navbarOpen ? " showMenu" : ""}`}> 
                 <li>
                     <NavLink 
-                        to="/model-portfolio" onClick={() => closeMenu()}>Home
+                        to="/model-portfolio" 
+                        onClick={() => closeMenu()}>
+                        Home
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                        to="/model-portfolio/gallery" onClick={() => closeMenu()}>Gallery
+                        to="/model-portfolio/gallery" 
+                        onClick={() => closeMenu()}>
+                        Gallery
                     </NavLink>
                 </li>
                 <li>
                     <NavLink 
-                        to="/model-portfolio/blog" onClick={() => closeMenu()}>Blog
+                        to="/model-portfolio/blog" 
+                        onClick={() => closeMenu()}>
+                        Blog
                     </NavLink>
                 </li>
                 <li>
                     <HashLink 
-                        to="/model-portfolio/#about-me" onClick={() => closeMenu()}>About me
+                        to="/model-portfolio/#about-me" 
+                        onClick={() => closeMenu()}>
+                        About me
                     </HashLink>
                 </li>
                 <li>
                     <HashLink 
-                        to="/model-portfolio/#contact" onClick={() => closeMenu()}>Contact
+                        to="/model-portfolio/#contact" 
+                        onClick={() => closeMenu()}>
+                        Contact
                     </HashLink>
                 </li>
             </ul>

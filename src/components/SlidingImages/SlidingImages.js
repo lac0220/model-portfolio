@@ -1,11 +1,11 @@
 import './sliding_images.scss';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/scss/alice-carousel.scss";
-import img_modeling1 from '../../img/Modeling/11.webp';
-import img_modeling2 from '../../img/Modeling/8.webp';
-import img_modeling3 from '../../img/Modeling/7.webp';
-import img_modeling4 from '../../img/Modeling/9.webp';
-import img_modeling5 from '../../img/Modeling/6.webp';
+import img_modeling1 from '../../img/Modeling/2.webp';
+import img_modeling2 from '../../img/Modeling/11.webp';
+import img_modeling3 from '../../img/Modeling/5.webp';
+import img_modeling4 from '../../img/Modeling/6.webp';
+import img_modeling5 from '../../img/Modeling/9.webp';
 
 export default function SlidingImages() {
     return (

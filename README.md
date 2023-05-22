@@ -1,14 +1,12 @@
 # Model portfolio
 
-​​The web application is designed for a model & artist with a gallery and a blog section. 
+​​The web app is designed mobile-friendly for a model & artist with a gallery and a blog section. 
 The contact form is set with EmailsJS account for sending messages to a Gmail email address.
-Mobile-friendly web design 
 
 ## Tech Stack
 
 - React.js
 - SCSS
-- NPM
 
 ## Setup
 
@@ -39,6 +37,7 @@ Third-Party NPM Packages:
 ## Version
 
 1.0 - 27/08/2022 - Publishing of the website
+1.1. - 22/05/2023 - Improving image quality, small updates
 
 ## Author
 
