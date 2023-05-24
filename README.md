@@ -37,6 +37,7 @@ Third-Party NPM Packages:
 ## Version
 
 1.0 - 27/08/2022 - Publishing of the website
+
 1.1. - 22/05/2023 - Improving image quality, small updates
 
 ## Author

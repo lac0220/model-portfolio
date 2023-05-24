@@ -8,7 +8,8 @@ $text-color:white;
         background-image: url(/img/Modeling/13.webp);		
         background-attachment: fixed;
         background-position-y: 33%;
-        background-size: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
         color: $text-color;
         li:nth-child(1),
         li:nth-child(2) {
@@ -42,10 +43,8 @@ $text-color:white;
 @media only screen and (max-width: 1500px) {
 
     .home ul {
-        padding: 250px 0;
         li:nth-child(1),
         li:nth-child(2) {
-            top: 250px; 
             width: 51%;
         }
 
@@ -63,7 +62,13 @@ $text-color:white;
 
     .home {
         ul {
+            padding: 250px 0;
             background-position-x: 90%;
+            li:nth-child(1),
+            li:nth-child(2) {
+                top: 250px; 
+            }
+
             li:nth-child(1) {
                 font-size: 2.2rem;
             }
@@ -86,7 +91,7 @@ $text-color:white;
             background-position-x: 85%;
             li:nth-child(1),
             li:nth-child(2) {
-                width: 79%;
+                width: 60%;
             }
 
             li:nth-child(1) {
@@ -110,10 +115,10 @@ $text-color:white;
         margin: auto 10px; 
         ul {
             padding: 220px 0;
-            background-size: 1000px;  
+            background-size: 700px;  
             background-attachment: scroll;
-            background-position-x: 65%;
-            background-position-y: 28%;
+            background-position-x: 60%;
+            background-position-y: 10%;
             li:nth-child(1),
             li:nth-child(2) {
                 top: 220px; 
@@ -142,6 +147,7 @@ $text-color:white;
         margin: auto; 
         ul {
             padding: 200px 0;
+            background-position-y: 16%;
             li:nth-child(1),
             li:nth-child(2) {
                 top: 200px; 
