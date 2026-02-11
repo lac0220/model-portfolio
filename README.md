@@ -40,6 +40,8 @@ Third-Party NPM Packages:
 
 1.1. - 22/05/2023 - Improving image quality, small updates
 
+1.2. - 11/02/2026 - Updating React versioning, small updates
+
 ## Author
 
 <b>Laszlo Nemeth</b>
@@ -50,11 +52,5 @@ Third-Party NPM Packages:
     </a>
     <a href="https://www.linkedin.com/in/nemeth0220">
         <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
-    </a>
-    <a href="https://gitlab.com/lac0220">
-        <img src="https://img.shields.io/badge/GitLab-gray?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab Badge"/>
-    </a>
-    <a href="https://codepen.io/lac0220/">
-        <img src="https://img.shields.io/badge/Codepen-black?style=for-the-badge&logo=codepen&logoColor=white" alt="Codepen Badge"/>
     </a>
 </div>

@@ -13,12 +13,11 @@ export const Contact = () => {
     const sendEmail = (data, e) => {
     console.log(data);
 
-    emailjs.sendForm('service_iqf6oqw', 'template_w49gu6l', e.target, 'TtX-buXBtDBrY53XD')
+    emailjs.sendForm('service_s607sx9', 'template_w49gu6l', e.target, 'TtX-buXBtDBrY53XD')
         .then(() => {
             navigate("/model-portfolio/message");
         }, (error) => {
             alert("Something went wrong. Please try again later");
-            // console.log(error);
         });
         e.target.reset()
     };
@@ -75,9 +74,7 @@ export const Contact = () => {
                 <img src={img_contact} alt="Contact" />
             </div> 
             <div>
-                <Link to='/model-portfolio/blog'>
-                    <h2>Visit my blog <FontAwesomeIcon icon={faBookmark}/></h2>
-                </Link> 
+                <Link to='/model-portfolio/blog'><h2>Visit my blog <FontAwesomeIcon icon={faBookmark}/></h2></Link> 
             </div> 
         </div>
     );

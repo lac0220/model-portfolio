@@ -16,13 +16,13 @@ html {
 
 body {
     font-size: 1.25rem;
-    overflow-y: scroll; /* Show scroll-bars */
+    overflow-y: scroll;
 }
  
 html, 
 body {
     height: 100vh;
-    scroll-padding-top: 90px; /* Equals to fixed navbar height for mobile usage*/
+    scroll-padding-top: 90px;
     scroll-behavior: smooth;
     line-height: 1.5;
     font-family: 'Playfair Display', 'Times New Roman', Times, serif;

@@ -9,8 +9,7 @@ export default function Footer() {
         
     return (
         <footer>
-            <p>Copyright © Catherine Doll <span style={{fontFamily: 'Times New Roman'}}>2023</span></p>
-            <p>Web design by Laszlo Nemeth</p>
+            <p>Copyright © Laszlo Nemeth <span style={{fontFamily: 'Times New Roman'}}>2026</span></p>
         </footer>
     );
 }

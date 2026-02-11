@@ -6,7 +6,8 @@ import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-sv
 export default function NavbarSocialMedia() {
     //NavbarSocialMedia not visible at message page
     const { pathname } = useLocation();
-        if (pathname === "/model-portfolio/message") return null;
+        if (pathname === "/model-portfolio/message") 
+        return null;
         
     return (
         <div className="social-media">
@@ -37,4 +38,3 @@ export default function NavbarSocialMedia() {
         </div> 
     );
 }
-

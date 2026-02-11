@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import NavbarSocialMedia from './components/Navbar/NavbarSocialMedia';
 import Footer from './components/Footer/Footer';
 import LoadingSpinner from "./components/LoadingSpinner/LoadingSpinner";
+import ScrollToTop from "./components/ScrollToTop";
 
 const LazyHome = React.lazy(() => import("./components/Home/Home"));
 const LazyBlog = React.lazy(() => import("./components/Blog/Blog"));
@@ -14,6 +15,7 @@ const LazyMessage = React.lazy(() => import("./components/Message/Message"));
 export default function App() {
     return (
         <BrowserRouter>
+            <ScrollToTop />
             <Navbar />
             <NavbarSocialMedia />
             <Routes>

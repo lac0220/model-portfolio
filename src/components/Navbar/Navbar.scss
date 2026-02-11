@@ -8,6 +8,7 @@ nav {
     width: 100vw;
     text-align: center;
     background-color: $first-color;
+    border-bottom: solid 1px white;
     div {
         padding-top: 6px;
         background-color: $text-color;
@@ -36,6 +37,7 @@ nav {
         z-index: 1;
         overflow: hidden;
         background-color: $first-color;
+        border-bottom: solid 1px white;
         li {
             display: inline-block;
             a {
