@@ -47,7 +47,7 @@ Third-Party NPM Packages:
 <b>Laszlo Nemeth</b>
 
 <div id="badges">
-    <a href="https://lac0220.github.io/lac0220/">
+    <a href="https://lac0220.github.io/laszlo-nemeth-portfolio/">
         <img src="https://img.shields.io/badge/Portfolio-red?style=for-the-badge&logo=logoColor=white" alt="Portfolio Badge"/>
     </a>
     <a href="https://www.linkedin.com/in/nemeth0220">
